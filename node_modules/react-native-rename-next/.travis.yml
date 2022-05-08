@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+ - "9"
+os:
+ - linux
+
+stages:
+ - test
+ - name: deploy
+   if: tag IS present
+
+jobs:
+ include:
+   - stage: test
+   - stage: deploy
+     deploy:
+       provider: npm
+       email: hello@maycon.dev
+       api_key: "$NPM_TOKEN"
+       on:
+         tags: true

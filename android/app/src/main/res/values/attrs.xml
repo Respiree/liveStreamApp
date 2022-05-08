@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BatteryView">
+        <attr name="battery_level" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CalmnessStressCircularChartView">
+        <attr name="stress" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CheckBox">
+        <attr name="checkbox_text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SurveyQuestionView" >
+        <attr name="question_type" format="enum">
+            <enum name="open" value="0" />
+            <enum name="yes_no" value="1" />
+        </attr>
+        <attr name="question_index" format="integer" />
+        <attr name="question_text" format="string" />
+        <attr name="question_sub_text" format="string" />
+    </declare-styleable>
+</resources>

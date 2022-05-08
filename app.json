@@ -1,0 +1,9 @@
+{
+  "name": "Respiree",
+  "displayName": "Respiree",
+  "expo": {
+    "name": "Respiree",
+    "slug": "expo-rnn-starter",
+    "sdkVersion": "40.0.0"
+  }
+}

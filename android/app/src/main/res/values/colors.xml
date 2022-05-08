@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorAccent">#4D7198</color>
+  <color name="cornflower">#6f87ff</color>
+  <color name="pastel_blue">#a8b6ff</color>
+  <color name="greyish_brown">#464646</color>
+  <color name="warm_blue">#4059f3</color>
+  <color name="caliowhite">#ffffff</color>
+  <color name="very_light_pink">#c6c6c6</color>
+  <color name="brown_grey">#909090</color>
+  <color name="aqua_marine">#35d8be</color>
+  <color name="dark_sky_blue">#4a8fe3</color>
+  <color name="pale_grey">#ebecfe</color>
+  <color name="iris">#616eb2</color>
+</resources>
