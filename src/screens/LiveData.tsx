@@ -421,7 +421,7 @@ const LiveData: React.FC = observer(({
         console.log('no enough data',  rawArr.length)
       }
       rr_flag = 0;  
-    }, 1000);
+    }, 5000);
   }, [])
 
   return(

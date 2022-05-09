@@ -44,12 +44,12 @@
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-hdpi/notification_icon.png"
     },
     {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_event.png.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xhdpi/event.png"
-    },
-    {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_trends_active.png.flat",
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xxhdpi/trends_active.png"
+    },
+    {
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_event.png.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xhdpi/event.png"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-ldpi_dashboard.png.flat",
@@ -220,16 +220,16 @@
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/raw/node_modules_awssdk_clienttranslate_dist_cjs_package.json"
     },
     {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-hdpi_trends.png.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-hdpi/trends.png"
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-mdpi_dashboard.png.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-mdpi/dashboard.png"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-mdpi_breathing_active.png.flat",
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-mdpi/breathing_active.png"
     },
     {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-mdpi_dashboard.png.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-mdpi/dashboard.png"
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-hdpi_trends.png.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-hdpi/trends.png"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-ldpi_breathing.png.flat",
@@ -252,12 +252,12 @@
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-mdpi/trends_active.png"
     },
     {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-hdpi_breathing_active.png.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-hdpi/breathing_active.png"
-    },
-    {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativesvg_node_modules_entities_lib_maps_legacy.json.flat",
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/raw/node_modules_reactnativesvg_node_modules_entities_lib_maps_legacy.json"
+    },
+    {
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-hdpi_breathing_active.png.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-hdpi/breathing_active.png"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_background.png.flat",
@@ -340,12 +340,12 @@
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xxhdpi/trends.png"
     },
     {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_fontawesome5free_meta.json.flat",
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_fontawesome5free_meta.json"
+    },
+    {
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-ldpi_event_active.png.flat",
@@ -372,6 +372,10 @@
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xxhdpi/dashboard_active.png"
     },
     {
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-mdpi_img_ic_profile.png.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-mdpi/img_ic_profile.png"
+    },
+    {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_breathing_active.png.flat",
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xhdpi/breathing_active.png"
     },
@@ -380,16 +384,12 @@
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-mdpi_img_ic_profile.png.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-mdpi/img_ic_profile.png"
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativesvg_node_modules_entities_lib_maps_decode.json.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/raw/node_modules_reactnativesvg_node_modules_entities_lib_maps_decode.json"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-mdpi_event_active.png.flat",
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-mdpi/event_active.png"
-    },
-    {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativesvg_node_modules_entities_lib_maps_decode.json.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/raw/node_modules_reactnativesvg_node_modules_entities_lib_maps_decode.json"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-mdpi_img_sync.png.flat",
@@ -464,12 +464,12 @@
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_event.png.flat",
-        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xxxhdpi/event.png"
-    },
-    {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_trends_active.png.flat",
         "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xhdpi/trends_active.png"
+    },
+    {
+        "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_event.png.flat",
+        "source": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/res/drawable-xxxhdpi/event.png"
     },
     {
         "merged": "/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
