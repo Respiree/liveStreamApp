@@ -60,7 +60,7 @@ const getTabOptions = async (): Promise<Options[]> => {
   const tabIcons = await loadTabIcons();
 
   return TabTitles.map((text, i) => ({
-    bottomTab: { text, ...tabIcons[i], }
+    bottomTab: { text }
   }));
 }
 

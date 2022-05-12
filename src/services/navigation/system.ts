@@ -49,20 +49,21 @@ class NavigationSystem {
 
     Navigation.setDefaultOptions({
       layout: {
-        orientation: ['portrait'],
+        orientation: ['landscape'],
         backgroundColor:theme.colors.bg,
         
       },
       bottomTabs: {
         titleDisplayMode: 'alwaysShow',
-        preferLargeIcons:true,
+        preferLargeIcons:false,
         drawBehind: false,
+        visible:false
       },
       bottomTab: {
         textColor: colors.main,
         selectedTextColor: colors.main,
         fontSize: 8,
-        selectedFontSize: 10,
+        selectedFontSize: 12,
       },
       topBar: {
         visible:false,

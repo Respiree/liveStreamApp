@@ -13,6 +13,7 @@ import Toast from 'react-native-simple-toast';
 import _ from 'lodash';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigationComponentDidAppear } from 'react-native-navigation-hooks/dist/hooks';
+import { ButtonIcon } from 'src/components/Button';
 
 type SpaceProps = {
   width?:number,
@@ -503,7 +504,7 @@ const Settings: React.FC = observer(({
 
     if(!bluetooth.isBusy && !syncDone){
       return(
-      <ScrollView nestedScrollEnabled style={[styles.container, {paddingHorizontal:ms(20,0.5)}]} contentContainerStyle={{flexGrow:1, paddingBottom: ms(50, 0.5) }}>
+      <ScrollView nestedScrollEnabled style={[styles.container, /* {paddingHorizontal:ms(20,0.5)} */]} contentContainerStyle={{flexGrow:1, paddingBottom: ms(50, 0.5) }}>
         <BottomSpace/>
         {
           !_.isEmpty(currDevice)?(
@@ -529,10 +530,18 @@ const Settings: React.FC = observer(({
         }
         {
           !_.isEmpty(patient.sensors)?(
-            <View>
+            <View >
+            <View style={{alignSelf:'flex-end', backgroundColor:colors.main, marginTop:vs(40), borderTopLeftRadius:ms(15, 0.5), borderBottomLeftRadius:ms(15, 0.5)}}>
+         {/*    <ButtonIcon icon={'close'} onPress={()=>nav.dismissAllOverlays()} /> */}
+
+      <ButtonTitle
+          btnStyle={{backgroundColor: (colors.main),/*  width:ms(80,0.5) */ borderRadius:ms(15, 0.5), height:40,}}
+          textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'Back'} onPress={()=>{ nav.dismissAllOverlays();
+      }}/>               
+          </View>
               <Text style={styles.subtitle}>{t.do("curr_device")}</Text>
               <BottomSpace height={5}/>
-
+              <View style={{    paddingHorizontal:ms(20,0.5)}}>
               <FlatList
                   nestedScrollEnabled
                   extraData={updateUI}
@@ -544,6 +553,7 @@ const Settings: React.FC = observer(({
                     return( <View style={{height:1, backgroundColor:colors.brownGrey}}/>)
                   }}
               />
+              </View>
               <BottomSpace/>
             </View>
           ):null
@@ -552,6 +562,7 @@ const Settings: React.FC = observer(({
             <View>
               <Text style={styles.subtitle}>{t.do("other_devices")}</Text>
               <BottomSpace height={5}/>
+                  <View style={{    paddingHorizontal:ms(20,0.5)}}>
               <FlatList
                   nestedScrollEnabled
                   extraData={updateUI}
@@ -563,11 +574,17 @@ const Settings: React.FC = observer(({
                     return( <View style={{height:1, backgroundColor:colors.brownGrey}}/>)
                   }}
               />
+              </View>
             </View>
 
         }
         <BottomSpace/>
-        <ButtonTitle btnStyle={[styles.buttonScan, {width:'100%', height:ms(40,0.5)}, {backgroundColor:!bluetooth.isScanning&&_.isEmpty(bleConnecting)&&!bluetooth.isBusy?colors.main:colors.very_light_grey}]} textStyle={[styles.buttonText, {fontFamily:bluetooth.isScanning?'karla_regular':'karla_bold'}]} title={t.do("scan_ble")}onPress={scanBle}/>
+  {/*       <ButtonTitle btnStyle={[styles.buttonScan, {width:'100%', height:ms(40,0.5)}, {backgroundColor:!bluetooth.isScanning&&_.isEmpty(bleConnecting)&&!bluetooth.isBusy?colors.main:colors.very_light_grey}]} textStyle={[styles.buttonText, {fontFamily:bluetooth.isScanning?'karla_regular':'karla_bold'}]} title={t.do("scan_ble")}onPress={scanBle}/> */}
+           <View style={{    paddingHorizontal:ms(20,0.5)}}>
+        <ButtonTitle
+          btnStyle={{backgroundColor:!bluetooth.isScanning&&_.isEmpty(bleConnecting)&&!bluetooth.isBusy?colors.main:colors.very_light_grey,/*  width:ms(80,0.5) */ borderRadius:ms(15, 0.5), height:40,}}
+          textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'SCAN BLUETOOTH DEVICE'} onPress={scanBle}/>   
+          </View>
         <BottomSpace height={ms(20,0.5)}/>
       </ScrollView>
       )
@@ -601,12 +618,13 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     flex:1,
     backgroundColor:'white',
     paddingVertical: ms(30, 0.5),
-    paddingHorizontal: ms(40,0.5)
+    /* paddingHorizontal: ms(40,0.5) */
   },
   subtitle:{
-    fontSize: ms(14,0.5),
+    fontSize: ms(10,0.8),
     fontFamily: 'karla_bold',
     color: theme.colors.darkGrey,
+    paddingHorizontal:ms(20,0.5)
   },
   switchLabel:{
     fontSize: ms(14,0.5),
@@ -618,11 +636,12 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     borderWidth: Platform.OS=="android"?3:1,
     borderColor:theme.colors.brownGrey,
     borderRadius:ms(10,0.5),
-    height: ms(140,0.5),
-    backgroundColor:'transparent'
+    height: ms(75,0.5),
+    backgroundColor:'transparent',
+    paddingHorizontal:ms(5,0.5)
   },
   listItemText:{
-    fontSize: ms(14,0.5),
+    fontSize: ms(12,0.5),
     fontFamily: 'karla_regular',
     color: theme.colors.darkGrey,
     marginHorizontal:ms(5,0.5),
@@ -630,7 +649,7 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
   },
   statusText:{
     width:'40%',
-    fontSize:ms(14,0.5),
+    fontSize:ms(12,0.5),
     fontFamily:'karla_regular',
     color:theme.colors.brownGrey,
     alignSelf:'center',
@@ -686,6 +705,7 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     backgroundColor:theme.colors.main,
     height:ms(45, 0.5),
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent:'center',
+    
   },
 });

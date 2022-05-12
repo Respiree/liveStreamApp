@@ -7,4 +7,5 @@ export default {
     IC_LOCK:require('../../img/ic_lock.png'),
     BREATH_GIF: require('../../img/breathing_animation.gif'),
     BREATH_PNG: require('../../img/breathing_animation_off.png'),
+    COMPANY_ICON: require('../../img/Account-Profile-Respiree.png'),
 };

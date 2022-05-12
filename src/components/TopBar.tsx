@@ -9,9 +9,10 @@ import { ScaledSheet, s, vs, ms, mvs } from 'react-native-size-matters';
 import { useStores } from 'src/stores';
 import _ from 'lodash';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
-const TopBar: React.FC = ({
-}) => {
+const TopBar: React.FC = (
+props: {liveRR:any}) => {
   const { styles } = useStyles(_styles);
   const { nav, t} = useServices();
   const { ui, patient, bluetooth} = useStores();
@@ -45,21 +46,26 @@ const TopBar: React.FC = ({
     if(bluetooth.connected && bluetooth.connectedId && !(bluetooth.gatewayMode && patient.isRegister))
       bluetooth.disconnectDevice(bluetooth.connectedId)
   }
-
+  
   return (
     <View style={styles.topContainer}>
-        <TouchableOpacity onPress={showProfile} style={{justifyContent:'center', paddingTop:ms(10), paddingBottom:ms(10), alignItems:'center'}}>
-          <Image style={styles.profile} source={Images.TOP_BAR_PROFILE_ACTIVE}/>
-        </TouchableOpacity>
-        <Text style={styles.text}>{t.do("respiree")}</Text>
-        <TouchableOpacity onPress={disconnectDevice} style={{backgroundColor:(!(bluetooth.gatewayMode && patient.isRegister)&&bluetooth.connected)?colors.main:colors.very_light_grey, paddingLeft:ms(12,0.5), paddingVertical:ms(8,0.5), paddingRight:ms(8,0.5), borderTopLeftRadius:ms(15, 0.5), borderBottomLeftRadius:ms(15, 0.5)}}>
+      <Image style={styles.profile} source={Images.COMPANY_ICON}/>
+      <Text style={styles.text}>Respiree Respiration Trace</Text>
+
+       {/*   <TouchableOpacity onPress={disconnectDevice} style={{backgroundColor:(!(bluetooth.gatewayMode && patient.isRegister)&&bluetooth.connected)?colors.main:colors.very_light_grey, paddingLeft:ms(12,0.5), paddingVertical:ms(8,0.5), paddingRight:ms(8,0.5), borderTopLeftRadius:ms(15, 0.5), borderBottomLeftRadius:ms(15, 0.5)}}>
           <Text style={{fontFamily:'karla_regular', fontSize:ms(12,0.8), color:(!(bluetooth.gatewayMode && patient.isRegister)&&bluetooth.connected)?'white':colors.brownGrey}}>{t.do("disconnect")}</Text>
-            {/* <Image style={styles.syncImg} source={bluetooth.isOn&&bluetooth.savedRecords&&bluetooth.savedRecords.recordCollectedBySensor>0?Images.TOP_BAR_SYNC_ACTIVE:Images.TOP_BAR_SYNC}/> */}
-        </TouchableOpacity>
-       
+        </TouchableOpacity>   */}
+         <View /* onPress={disconnectDevice} */ style={{backgroundColor:colors.main, paddingLeft:ms(12,0.5), paddingVertical:ms(8,0.5), paddingRight:ms(8,0.5), borderTopLeftRadius:ms(15, 0.5), borderBottomLeftRadius:ms(15, 0.5)}}>
+          <Text style={{fontFamily:'karla_regular', fontSize:ms(12,0.8), color:"white"}}>{"RR (BPM)"}</Text>
+          <Text style={{fontFamily:'karla_regular', fontSize:ms(26,0.8), color:"white"}}>{props.liveRR}
+           {'  '}<Icon name="lungs" size={15} color="white"/>
+          </Text>
+        </View>         
+        {/* <Text>RR</Text> */}
     </View>
   )
 }
+
 
 const _styles = (theme: ThemeType) => ScaledSheet.create({
     topContainer:{
@@ -68,6 +74,7 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
         backgroundColor: theme.colors.bg,
         justifyContent:'space-between',
         flexDirection:'row',
+    
     },
     syncImg:{
       height: 30,
@@ -76,10 +83,10 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     },
     profile:{
         height: 30,
-        width:33
+        width:30
     },
     text: {
-        fontSize: 20,
+        fontSize: 12,
         margin: ms(theme.sizes.s, 0.8),
         textAlign: 'center',
         color: theme.colors.text,

@@ -1,3 +1,5 @@
+
+
 function DSP_LIB(){
     /**
      * DSP is an object which contains general purpose utility functions and constants
@@ -2699,9 +2701,7 @@ function run_fft(Xin, fs){
     }
 }
 
-function calculate_rr(read_data, params, sqa_bandpass_rr){
-
-    
+export function calculate_rr(read_data, params, sqa_bandpass_rr){
     // #%% Preprocess raw signal
     let time_data = read_data[0]
     let value_data = read_data[1]

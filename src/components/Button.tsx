@@ -3,10 +3,11 @@ import {
     Text,
     View,
     StyleSheet,
+    TouchableOpacity
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome5';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+/* import { TouchableOpacity } from 'react-native-gesture-handler'; */
 
 import useStyles from 'src/hooks/useStyles';
 

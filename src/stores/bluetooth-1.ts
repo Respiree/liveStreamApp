@@ -272,7 +272,7 @@ class BleStore extends HydratedStore {
     else if(data.value[0] == BleSensorConstant.BLE_SENSOR_RECORD_START_BYTE && this.sensorRecords > 0){
       const value = data.value;
       const valueLength = value.length;
-      //console.log("valueLength >>>>>>>>>> " + valueLength);
+      console.log("valueLength >>>>>>>>>> " + valueLength);
 
       if(value[14] == 0 && value[15] == 0 && value[16] == 0 && value[17] == 0) {
           console.log("skip null data");

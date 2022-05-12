@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Alert, processColor, RefreshControl, SafeAreaView} from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Alert, processColor, RefreshControl, SafeAreaView, Button} from 'react-native';
 import { observer } from 'mobx-react';
 import { useStores } from 'src/stores';
 import useStyles from 'src/hooks/useStyles';
@@ -16,7 +16,6 @@ import { numberToString, ModeType } from 'src/stores/bluetooth';
 import TopBar from 'src/components/TopBar';
 import { useNavigationComponentDidAppear } from 'react-native-navigation-hooks/dist/hooks';
 import calculate_rr from 'src/utils/rr_conversion/rr';
-
 
 let now = moment(new Date());
 let xVal:string[] = [];
@@ -42,7 +41,7 @@ const MAX_Y_VALUE = 21*1024;//2*1024;
 const MIN_SENSOR_VALUE = 0;
 const ANIMATION_X_DURATION = 0;
 const ANIMATION_Y_DURATION = 0;
-const MOVING_AVERAGE_SIZE = 9
+const MOVING_AVERAGE_SIZE = 15
 const BUFFERED_RECORD_SIZE = MAX_RECORDS+MOVING_AVERAGE_SIZE;
 
 //raw signal to respiratory rate
@@ -129,8 +128,8 @@ const LiveData: React.FC = observer(({
           }
         }
         else if(result.type && result.type === SuccessType.Ble_Single_Sensor_Data){
+          /* console.log('result: ', result) */
           if(result.sensor1 >= MIN_SENSOR_VALUE ) {
-              /* console.log("s1: ",result.sensor1) */
               if(sensor1.length > BUFFERED_RECORD_SIZE) sensor1.shift();
               sensor1.push(result.sensor1);
           }
@@ -289,12 +288,6 @@ const LiveData: React.FC = observer(({
       var array = [];
       var ii = 0;
 
-      /*for(ii = 0; ii < copyLen; ii++) {
-          array.push(values[ii]);
-          ii++;
-      }
-      return array;*/
-
       for(ii = 0; ii < fillLen; ii++) {
           array.push(0);
           ii++;
@@ -318,12 +311,6 @@ const LiveData: React.FC = observer(({
               array.push(value);
           }
       }
-
-      /*if(copyLen >= MAX_RECORDS) {
-          console.log("input>>>>>>>", values)
-          console.log("output>>>>>>>", array)
-      }*/
-
       return array;
   }
 
@@ -421,43 +408,30 @@ const LiveData: React.FC = observer(({
         console.log('no enough data',  rawArr.length)
       }
       rr_flag = 0;  
-    }, 5000);
+    }, 10000);
   }, [])
 
   return(
 
     <SafeAreaView style={styles.container}>
-    <View style={{flex:.1, marginLeft: sizes.margin, marginTop: Platform.OS==="android"?0:40}}>
-    <TopBar/>
+    <View style={{flex:.1, marginLeft: sizes.margin, marginTop: Platform.OS==="android"?15:40}}>
+    <TopBar liveRR= {liveRR}/>
     </View>
       <Text style={{
         alignSelf:'flex-start',
-        fontSize: ms(14,0.8),
+        fontSize: ms(12,0.8),
         fontFamily:'karla_bold',
         color:colors.black,
-        marginHorizontal:ms(20,0.5),
-        marginTop:ms(10,0.5),
-        //marginBottom:ms(20,0.5)
       }}>
-        {deviceStatus}
+        Device status: {deviceStatus}
       </Text>
-      <Text style={{
-        alignSelf:'flex-start',
-        fontSize: ms(14,0.8),
-        fontFamily:'karla_bold',
-        color:colors.black,
-        marginHorizontal:ms(20,0.5),
-      }}>
-      Temperature: {temperature}
-      </Text>
-      {
+     {
         (sensor1Data && sensor1Data.length > 0) || (sensor2Data && sensor2Data.length >0)?(<><LineChart
           style={styles.chart}
           data={{
             dataSets:
             [{
-                values: sensor1Data,
-                label: "Sensor 1",
+                values: sensor1Data,          
                 config: {
                   mode: "CUBIC_BEZIER",
                   drawValues: false,
@@ -468,9 +442,9 @@ const LiveData: React.FC = observer(({
                   color: processColor('#3253e2')
                 }
             },
-            {
+           /*  {
               values: sensor2Data,
-              label: "Sensor 2",
+             
               config: {
                 mode: "CUBIC_BEZIER",
                 drawValues: false,
@@ -480,7 +454,7 @@ const LiveData: React.FC = observer(({
                 drawFilled: false,
                 color: processColor('#0b9fb9')
               }
-            }]
+            } */]
           }}
           chartDescription={{ text: "" }}
             legend={{
@@ -490,7 +464,10 @@ const LiveData: React.FC = observer(({
             enabled: false,
           }}
           yAxis={{
+          
             left: {
+              drawGridLines: false,
+              drawLabels: false, 
               enabled: true,
               //axisMinimum: 0,
               //axisMaximum: MAX_Y_VALUE
@@ -523,18 +500,9 @@ const LiveData: React.FC = observer(({
         />
       </>
         ):<View/>
-      }
-      <Text style={{
-        alignSelf:'center',
-        fontSize: ms(14,0.8),
-        fontFamily:'karla_bold',
-        color:colors.black,
-       
-      }}>
-      Latest RR: {liveRR} 
-      </Text>
-      <View style={{flexDirection:'row', marginTop:ms(50,0.5), marginHorizontal:ms(20,0.5), justifyContent:'space-between'}}>
-      <ButtonTitle
+      }  
+      <View style={{flexDirection:'row',  marginHorizontal:ms(20,0.5), justifyContent:'space-between'}}>
+     {/*  <ButtonTitle
           btnStyle={{backgroundColor: (isSensor1On ? colors.main : colors.brownGrey), width:ms(80,0.5)}}
           textStyle={{fontSize:ms(14,0.8), color: (isSensor1On ? colors.white : colors.lightGrey)}} title={t.do('sensor1')} onPress={()=>{
           toggleSensor1();
@@ -543,21 +511,16 @@ const LiveData: React.FC = observer(({
           btnStyle={{backgroundColor: (isSensor2On ? colors.main : colors.brownGrey), width:ms(80,0.5)}}
           textStyle={{fontSize:ms(14,0.8), color: (isSensor2On ? colors.white : colors.lightGrey)}} title={t.do('sensor2')} onPress={()=>{
           toggleSensor2();
-      }}/>
+      }}/> */}
       <ButtonTitle
-        btnStyle={{backgroundColor: colors.main, width:ms(80,0.5)}}
-        textStyle={{fontSize:ms(14,0.8), color:colors.white}} title={!isLiveModeStart ? t.do('start') : t.do('stop')}
+          btnStyle={{backgroundColor: (colors.main),/*  width:ms(80,0.5) */ borderRadius:ms(15, 0.5), height:40}}
+          textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'Settings'} onPress={()=>{ nav.showProfile();
+      }}/>       
+      <ButtonTitle
+        btnStyle={{backgroundColor: colors.main, width:ms(80,0.5), height:40, borderRadius:ms(15, 0.5)}}
+        textStyle={{fontSize:ms(12,0.8), color:colors.white}} title={!isLiveModeStart ? t.do('start') : t.do('stop')}
         onPress={()=>
           {
-            /*clearInterval(thisInterval)
-            if(bluetooth.connected){
-              bluetooth.disconnectDevice(bluetooth.connectedId)
-            }else{
-              nav.popScreen(componentId);
-            }
-            bluetooth.setMode(0)*/
-            //if(bluetooth.getMode() == 0 || bluetooth.getMode() == ModeType.LIVE_MODE || bluetooth.getMode() == ModeType.PULL_MODE){
-                //if(!bluetooth.connected) {
                 if(!isLiveModeStart) {
                     bluetooth.setMode(ModeType.LIVE_MODE)
                     if(!bluetooth.connected) {
@@ -576,7 +539,7 @@ const LiveData: React.FC = observer(({
             //}
           }}/>
       </View>
-    </SafeAreaView>
+    </SafeAreaView>  
   )
 
 });
@@ -600,14 +563,19 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
       flex:1,
       backgroundColor:'white',
       paddingHorizontal:5,
-      justifyContent:'center'
+      justifyContent:'space-around'
+      
     },
     chart_container: {
         flex: 1,
     },
     chart: {
-        height: vs(400),
-
+      padding:0,
+      marginHorizontal:0,
+      marginBottom:vs(-15),
+      marginTop:vs(-15), 
+      height: vs(120),
+    
     },
     hrChart: {
         height: vs(300),

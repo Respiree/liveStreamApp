@@ -14,8 +14,6 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
- 
-
 
 import expo.modules.ApplicationLifecycleDispatcher;
 import expo.modules.ReactNativeHostWrapper;
@@ -59,6 +57,13 @@ public class MainApplication extends NavigationApplication {
         protected String getJSMainModuleName() {
             return "index";
         }
+
+/*        // TODO: Remove this when JSI Modules can be autoinstalled (maybe RN 0.65)
+       @Override
+       protected JSIModulePackage getJSIModulePackage() {
+         return new MultiThreadconfig();
+       } */
+  
 
 
 /*           @Override

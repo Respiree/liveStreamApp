@@ -68,7 +68,7 @@
 35-->[com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:22-107
 36
 37    <application
-37-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:11:5-59:19
+37-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:11:5-60:19
 38        android:name="com.respiree.app.MainApplication"
 38-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:12:7-38
 39        android:allowBackup="false"
@@ -141,75 +141,77 @@
 80        <!-- android:name="com.google.firebase.messaging.default_notification_color" -->
 81        <!-- android:resource="@color/colorAccent" /> -->
 82        <activity
-82-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:45:3-55:20
+82-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:45:3-56:20
 83            android:name="com.respiree.app.MainActivity"
 83-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:46:5-33
 84            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-84-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:48:11-88
+84-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:49:11-88
 85            android:label="@string/app_name"
-85-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:47:11-43
+85-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:48:11-43
 86            android:launchMode="singleTask"
-86-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:49:11-42
-87            android:windowSoftInputMode="adjustResize" >
-87-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:50:11-53
-88            <intent-filter>
-88-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:51:13-54:29
-89                <action android:name="android.intent.action.MAIN" />
-89-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:52:17-69
-89-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:52:25-66
-90
-91                <category android:name="android.intent.category.LAUNCHER" />
-91-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:53:17-77
-91-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:53:27-74
-92            </intent-filter>
-93        </activity>
-94        <activity
-94-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:57:9-86
-95            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-95-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:57:19-83
-96            android:exported="false" />
-96-->[:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Debug/AndroidManifest.xml:12:13-37
-97
-98        <provider
-98-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-34:20
-99            android:name="expo.modules.filesystem.FileSystemFileProvider"
-99-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-74
-100            android:authorities="com.respiree.app.FileSystemFileProvider"
-100-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-74
-101            android:exported="false"
-101-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-37
-102            android:grantUriPermissions="true" >
-102-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-47
-103            <meta-data
-103-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-33:70
-104                android:name="android.support.FILE_PROVIDER_PATHS"
-104-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-67
-105                android:resource="@xml/file_system_provider_paths" />
-105-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:17-67
-106        </provider>
-107
-108        <meta-data
-108-->[:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:89
-109            android:name="org.unimodules.core.AppLoader#react-native-headless"
-109-->[:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
-110            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
-110-->[:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-86
-111
-112        <activity
-112-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-113            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-113-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-114            android:exported="false"
-114-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-115            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-115-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-116
-117        <meta-data
-117-->[com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-118            android:name="com.google.android.gms.version"
-118-->[com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-119            android:value="@integer/google_play_services_version" />
-119-->[com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-120    </application>
-121
-122</manifest>
+86-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:50:11-42
+87            android:screenOrientation="landscape"
+87-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:47:11-48
+88            android:windowSoftInputMode="adjustResize" >
+88-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:51:11-53
+89            <intent-filter>
+89-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:52:13-55:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:53:17-69
+90-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:53:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:54:17-77
+92-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:54:27-74
+93            </intent-filter>
+94        </activity>
+95        <activity
+95-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:58:9-86
+96            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+96-->/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:58:19-83
+97            android:exported="false" />
+97-->[:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Debug/AndroidManifest.xml:12:13-37
+98
+99        <provider
+99-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-34:20
+100            android:name="expo.modules.filesystem.FileSystemFileProvider"
+100-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-74
+101            android:authorities="com.respiree.app.FileSystemFileProvider"
+101-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-74
+102            android:exported="false"
+102-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-37
+103            android:grantUriPermissions="true" >
+103-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-47
+104            <meta-data
+104-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-33:70
+105                android:name="android.support.FILE_PROVIDER_PATHS"
+105-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-67
+106                android:resource="@xml/file_system_provider_paths" />
+106-->[:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:17-67
+107        </provider>
+108
+109        <meta-data
+109-->[:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:89
+110            android:name="org.unimodules.core.AppLoader#react-native-headless"
+110-->[:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+111            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+111-->[:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-86
+112
+113        <activity
+113-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+114-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+115            android:exported="false"
+115-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+117
+118        <meta-data
+118-->[com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+119            android:name="com.google.android.gms.version"
+119-->[com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+120            android:value="@integer/google_play_services_version" />
+120-->[com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+121    </application>
+122
+123</manifest>

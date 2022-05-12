@@ -295,7 +295,6 @@ class BleStore extends HydratedStore {
     else if(data.value[0] == BleSensorConstant.BLE_SENSOR_RECORD_START_BYTE && (this.sensorRecords > 0 || this.liveMode)){
       const value = data.value;
       const valueLength = value.length;
-      //console.log("valueLength >>>>>>>>>> " + valueLength);
 
       let dataOffset = mBleSensorPackedFormat ? 10 : 16;
       let remainingLength = valueLength;
@@ -404,6 +403,7 @@ class BleStore extends HydratedStore {
                       //console.log("currData>>>> ", currData);
                   }
                   if(this.liveMode) {
+                      console.log('sensor1', sensor1)
                       this.callbackToAllListener(null, {type:SuccessType.Ble_Single_Sensor_Data, sensor1, sensor2, temperature });
                   }
               }
@@ -790,7 +790,6 @@ class BleStore extends HydratedStore {
     let pbytes = [];
     pbytes[0] = BleSensorConstant.BLE_SENSOR_COMMAND_START_BYTE;
     pbytes[1] = this.liveMode ? BleSensorConstant.BLE_SENSOR_COMMAND_REQ_SEND_LIVE_RECORDS : BleSensorConstant.BLE_SENSOR_COMMAND_REQ_SEND_ALL_RECORDS;
-    //pbytes[1] = this.liveMode ? BleSensorConstant.BLE_SENSOR_COMMAND_REQ_SEND_LIVE_PACKED : BleSensorConstant.BLE_SENSOR_COMMAND_REQ_SEND_ALL_RECORDS;
     pbytes[2] = ((patientId >> 8) & 0xff);
     pbytes[3] = (patientId & 0xff);
     var idx = 4;

@@ -71,9 +71,9 @@ const Profile: React.FC  = observer(({
     return (
       <View style={styles.root} key={'overlay'}>
         <View style={styles.alert}>
-          <View style={{alignSelf:'center', borderRadius:50, backgroundColor:'white', marginBottom:vs(10)}}>
+{/*           <View style={{alignSelf:'center', borderRadius:50, backgroundColor:'white', marginBottom:vs(10)}}>
             <ButtonIcon icon={'close'} onPress={()=>nav.dismissAllOverlays()} />
-          </View>
+          </View> */}
           <TabView
             navigationState={state}
             renderScene={renderScene}
