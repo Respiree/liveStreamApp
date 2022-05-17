@@ -2703,6 +2703,7 @@ function run_fft(Xin, fs){
 
 export function calculate_rr(read_data, params, sqa_bandpass_rr){
     // #%% Preprocess raw signal
+    console.log('start calc')
     let time_data = read_data[0]
     let value_data = read_data[1]
     let mva = moving_average(time_data, value_data, params['window_mva'])

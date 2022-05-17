@@ -396,7 +396,7 @@ const LiveData: React.FC = observer(({
         {
           T.push(n);
           V.push(rawArr[i][1]);
-          console.log('in for loop', rawArr[i][1])
+          //console.log('in for loop', rawArr[i][1])
           n=n+1;
         }
         console.log('T' , T);
@@ -410,7 +410,7 @@ const LiveData: React.FC = observer(({
       }
       rr_flag = 0;  
     }, 10000);
-  }, [])
+  }, [resultConversion])
 
   return(
 
@@ -418,7 +418,7 @@ const LiveData: React.FC = observer(({
     <View style={{flex:.1, marginTop: Platform.OS==="android"?StatusBar.currentHeight:40}}>
     <TopBar liveRR= {liveRR} deviceStatus={deviceStatus}/>
     </View>
-     {
+      {
         (sensor1Data && sensor1Data.length > 0) || (sensor2Data && sensor2Data.length >0)?(<><LineChart
           style={styles.chart}
           data={{
@@ -435,19 +435,7 @@ const LiveData: React.FC = observer(({
                   color: processColor('#3253e2')
                 }
             },
-           /*  {
-              values: sensor2Data,
-             
-              config: {
-                mode: "CUBIC_BEZIER",
-                drawValues: false,
-                lineWidth: 1,
-                drawCircles: false,
-                highlightColor: processColor("transparent"),
-                drawFilled: false,
-                color: processColor('#0b9fb9')
-              }
-            } */]
+            ]
           }}
           chartDescription={{ text: "" }}
             legend={{
@@ -462,8 +450,6 @@ const LiveData: React.FC = observer(({
               drawGridLines: false,
               drawLabels: false, 
               enabled: true,
-              //axisMinimum: 0,
-              //axisMaximum: MAX_Y_VALUE
             },
             right: {
               enabled: false
@@ -493,7 +479,7 @@ const LiveData: React.FC = observer(({
         />
       </>
         ):<View/>
-      }  
+      }   
       <View style={{flexDirection:'row',  marginHorizontal:ms(20,0.5), justifyContent:'space-between',  alignItems:'center',}}>
      {/*  <ButtonTitle
           btnStyle={{backgroundColor: (isSensor1On ? colors.main : colors.brownGrey), width:ms(80,0.5)}}
