@@ -504,8 +504,15 @@ const Settings: React.FC = observer(({
 
     if(!bluetooth.isBusy && !syncDone){
       return(
-      <ScrollView nestedScrollEnabled style={[styles.container, /* {paddingHorizontal:ms(20,0.5)} */]} contentContainerStyle={{flexGrow:1, paddingBottom: ms(50, 0.5) }}>
+      <ScrollView nestedScrollEnabled style={[styles.container, /* {paddingHorizontal:ms(20,0.5)} */]} contentContainerStyle={{flexGrow:1}}>
         <BottomSpace/>
+        <View style={{alignSelf:'flex-end', backgroundColor:colors.main,  borderTopLeftRadius:ms(15, 0.5), borderBottomLeftRadius:ms(15, 0.5)}}>
+
+          <ButtonTitle
+            btnStyle={{backgroundColor: (colors.main),/*  width:ms(80,0.5) */ borderRadius:ms(15, 0.5), height:40,}}
+            textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'Back'} onPress={()=>{ nav.dismissAllOverlays();
+        }}/>               
+          </View>
         {
           !_.isEmpty(currDevice)?(
             <View>
@@ -531,17 +538,10 @@ const Settings: React.FC = observer(({
         {
           !_.isEmpty(patient.sensors)?(
             <View >
-            <View style={{alignSelf:'flex-end', backgroundColor:colors.main, marginTop:vs(40), borderTopLeftRadius:ms(15, 0.5), borderBottomLeftRadius:ms(15, 0.5)}}>
-         {/*    <ButtonIcon icon={'close'} onPress={()=>nav.dismissAllOverlays()} /> */}
 
-      <ButtonTitle
-          btnStyle={{backgroundColor: (colors.main),/*  width:ms(80,0.5) */ borderRadius:ms(15, 0.5), height:40,}}
-          textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'Back'} onPress={()=>{ nav.dismissAllOverlays();
-      }}/>               
-          </View>
               <Text style={styles.subtitle}>{t.do("curr_device")}</Text>
               <BottomSpace height={5}/>
-              <View style={{    paddingHorizontal:ms(20,0.5)}}>
+              <View style={{paddingHorizontal:ms(20,0.5)}}>
               <FlatList
                   nestedScrollEnabled
                   extraData={updateUI}
@@ -559,7 +559,7 @@ const Settings: React.FC = observer(({
           ):null
         }
         {
-            <View>
+            <View>            
               <Text style={styles.subtitle}>{t.do("other_devices")}</Text>
               <BottomSpace height={5}/>
                   <View style={{    paddingHorizontal:ms(20,0.5)}}>
@@ -576,11 +576,9 @@ const Settings: React.FC = observer(({
               />
               </View>
             </View>
-
         }
         <BottomSpace/>
-  {/*       <ButtonTitle btnStyle={[styles.buttonScan, {width:'100%', height:ms(40,0.5)}, {backgroundColor:!bluetooth.isScanning&&_.isEmpty(bleConnecting)&&!bluetooth.isBusy?colors.main:colors.very_light_grey}]} textStyle={[styles.buttonText, {fontFamily:bluetooth.isScanning?'karla_regular':'karla_bold'}]} title={t.do("scan_ble")}onPress={scanBle}/> */}
-           <View style={{    paddingHorizontal:ms(20,0.5)}}>
+        <View style={{    paddingHorizontal:ms(20,0.5)}}>
         <ButtonTitle
           btnStyle={{backgroundColor:!bluetooth.isScanning&&_.isEmpty(bleConnecting)&&!bluetooth.isBusy?colors.main:colors.very_light_grey,/*  width:ms(80,0.5) */ borderRadius:ms(15, 0.5), height:40,}}
           textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'SCAN BLUETOOTH DEVICE'} onPress={scanBle}/>   
@@ -617,7 +615,6 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
   container:{
     flex:1,
     backgroundColor:'white',
-    paddingVertical: ms(30, 0.5),
     /* paddingHorizontal: ms(40,0.5) */
   },
   subtitle:{
@@ -636,7 +633,7 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     borderWidth: Platform.OS=="android"?3:1,
     borderColor:theme.colors.brownGrey,
     borderRadius:ms(10,0.5),
-    height: ms(75,0.5),
+    minHeight: ms(45,0.5),
     backgroundColor:'transparent',
     paddingHorizontal:ms(5,0.5)
   },

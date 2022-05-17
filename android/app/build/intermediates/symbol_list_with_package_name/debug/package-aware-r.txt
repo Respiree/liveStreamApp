@@ -1787,6 +1787,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_upload
+drawable img_accountprofilerespiree
 drawable img_breathing_animation
 drawable img_breathing_animation_off
 drawable img_ic_lock

@@ -23,7 +23,7 @@ type State = NavigationState<{
 }>;
 import UserProfile from './UserProfile';
 import Settings from './Settings';
-
+import { Platform, StatusBar} from 'react-native';
 const Profile: React.FC  = observer(({
   componentId,
 }) => {
@@ -64,22 +64,23 @@ const Profile: React.FC  = observer(({
   );
 
   const renderScene = SceneMap({
-    user: UserProfile,
+  /*   user: UserProfile, */
     setting: Settings
   });
 
     return (
       <View style={styles.root} key={'overlay'}>
         <View style={styles.alert}>
-{/*           <View style={{alignSelf:'center', borderRadius:50, backgroundColor:'white', marginBottom:vs(10)}}>
+        {/*   <View style={{alignSelf:'center', borderRadius:50, backgroundColor:'white', marginBottom:vs(10)}}>
             <ButtonIcon icon={'close'} onPress={()=>nav.dismissAllOverlays()} />
-          </View> */}
+          </View>   */}
           <TabView
             navigationState={state}
             renderScene={renderScene}
-            renderTabBar={renderTabBar}
+            renderTabBar={ ()=> <></>}
+      /*       renderTabBar={<View>hi</View>} */
             onIndexChange={handleIndexChange}
-            initialLayout={{ width: Dimensions.get('window').width }}
+            initialLayout={{ width: Dimensions.get('window').width }} 
           />
         </View>
       </View>
@@ -94,23 +95,22 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     position: 'absolute',
     height: '100%',
     width:'100%',
-    justifyContent:'flex-end',
+    marginTop: Platform.OS==="android"?StatusBar.currentHeight:40,
     bottom:0,
     left: 0,
     right: 0,
-    flex:1,
+    flex:1, 
   },
   alert: {
     width: '100%',
     height: Dimensions.get('window').height*0.8,
     alignSelf:'flex-end',
     backgroundColor:'transparent',
-    justifyContent:'flex-end'
+    justifyContent:'flex-end',
+    flex: 1
   },
   tabbar: {
     width:'100%',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
     backgroundColor: 'white',
   },
   indicator: {
@@ -118,7 +118,7 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
   },
   label: {
     fontFamily:'karla_bold',
-    fontSize: ms(14, 0.3),
+    fontSize: ms(12, 0.3),
   },
   tabStyle: {
     width: Dimensions.get('window').width/2,

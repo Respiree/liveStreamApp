@@ -16,6 +16,7 @@ import { numberToString, ModeType } from 'src/stores/bluetooth';
 import TopBar from 'src/components/TopBar';
 import { useNavigationComponentDidAppear } from 'react-native-navigation-hooks/dist/hooks';
 import calculate_rr from 'src/utils/rr_conversion/rr';
+import { Platform, StatusBar} from 'react-native';
 
 let now = moment(new Date());
 let xVal:string[] = [];
@@ -266,13 +267,13 @@ const LiveData: React.FC = observer(({
 
       setIsAddData(false);
   }, [isAddData, sensor1Data, sensor2Data])
-
+/* 
   const startInterval = () => {
     thisInterval = setInterval(function() {
       //addData();
       //setIsAddData(true);
     }, 500);
-  };
+  }; */
 
   /*const initChart = () => {
     setSensor1(_.clone(sensor1))
@@ -414,17 +415,9 @@ const LiveData: React.FC = observer(({
   return(
 
     <SafeAreaView style={styles.container}>
-    <View style={{flex:.1, marginLeft: sizes.margin, marginTop: Platform.OS==="android"?15:40}}>
-    <TopBar liveRR= {liveRR}/>
+    <View style={{flex:.1, marginTop: Platform.OS==="android"?StatusBar.currentHeight:40}}>
+    <TopBar liveRR= {liveRR} deviceStatus={deviceStatus}/>
     </View>
-      <Text style={{
-        alignSelf:'flex-start',
-        fontSize: ms(12,0.8),
-        fontFamily:'karla_bold',
-        color:colors.black,
-      }}>
-        Device status: {deviceStatus}
-      </Text>
      {
         (sensor1Data && sensor1Data.length > 0) || (sensor2Data && sensor2Data.length >0)?(<><LineChart
           style={styles.chart}
@@ -501,7 +494,7 @@ const LiveData: React.FC = observer(({
       </>
         ):<View/>
       }  
-      <View style={{flexDirection:'row',  marginHorizontal:ms(20,0.5), justifyContent:'space-between'}}>
+      <View style={{flexDirection:'row',  marginHorizontal:ms(20,0.5), justifyContent:'space-between',  alignItems:'center',}}>
      {/*  <ButtonTitle
           btnStyle={{backgroundColor: (isSensor1On ? colors.main : colors.brownGrey), width:ms(80,0.5)}}
           textStyle={{fontSize:ms(14,0.8), color: (isSensor1On ? colors.white : colors.lightGrey)}} title={t.do('sensor1')} onPress={()=>{
@@ -516,6 +509,13 @@ const LiveData: React.FC = observer(({
           btnStyle={{backgroundColor: (colors.main),/*  width:ms(80,0.5) */ borderRadius:ms(15, 0.5), height:40}}
           textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'Settings'} onPress={()=>{ nav.showProfile();
       }}/>       
+      <Text style={{
+        fontSize: ms(12,0.8),
+        fontFamily:'karla_bold',
+        color:colors.black
+      }}>
+        Device status:  {deviceStatus} 
+      </Text>
       <ButtonTitle
         btnStyle={{backgroundColor: colors.main, width:ms(80,0.5), height:40, borderRadius:ms(15, 0.5)}}
         textStyle={{fontSize:ms(12,0.8), color:colors.white}} title={!isLiveModeStart ? t.do('start') : t.do('stop')}
@@ -537,7 +537,7 @@ const LiveData: React.FC = observer(({
                     mIsLiveMode = false;
                 }
             //}
-          }}/>
+          }}/>          
       </View>
     </SafeAreaView>  
   )
@@ -572,9 +572,7 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     chart: {
       padding:0,
       marginHorizontal:0,
-      marginBottom:vs(-15),
-      marginTop:vs(-15), 
-      height: vs(120),
+      height: mvs(90),
     
     },
     hrChart: {

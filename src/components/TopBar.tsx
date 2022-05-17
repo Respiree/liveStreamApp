@@ -82,11 +82,11 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
       backgroundColor:theme.colors.bg
     },
     profile:{
-        height: 30,
-        width:30
+        height: ms(20),
+        width:ms(20)
     },
     text: {
-        fontSize: 12,
+        fontSize: ms(14,0.8),
         margin: ms(theme.sizes.s, 0.8),
         textAlign: 'center',
         color: theme.colors.text,
