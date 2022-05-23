@@ -6,6 +6,7 @@ INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/ap
 INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
 MERGED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
 MERGED from [hermes-debug.aar] /home/marcos/.gradle/caches/transforms-2/files-2.1/faee6052228b01ecafb99741192b8dd0/jetified-hermes-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-threads] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-threads/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.flipper:flipper:0.54.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/72337af98638294df0fac0c4e504c796/jetified-flipper-0.54.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/82e2a40eab09568c1472d2fefebf4235/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/9afa707a067675f3c95a8e0ad8284681/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
@@ -14,6 +15,7 @@ MERGED from [:react-native-community_masked-view] /home/marcos/Desktop/original/
 MERGED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [:amazon-cognito-identity-js] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/amazon-cognito-identity-js/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:expo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-a-beep] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-a-beep/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-charts-wrapper] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-charts-wrapper/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -316,6 +318,8 @@ INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/ap
 INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
 MERGED from [hermes-debug.aar] /home/marcos/.gradle/caches/transforms-2/files-2.1/faee6052228b01ecafb99741192b8dd0/jetified-hermes-debug/AndroidManifest.xml:5:5-44
 MERGED from [hermes-debug.aar] /home/marcos/.gradle/caches/transforms-2/files-2.1/faee6052228b01ecafb99741192b8dd0/jetified-hermes-debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-threads] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-threads/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-threads] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-threads/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.flipper:flipper:0.54.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/72337af98638294df0fac0c4e504c796/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.54.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/72337af98638294df0fac0c4e504c796/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/82e2a40eab09568c1472d2fefebf4235/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
@@ -332,6 +336,8 @@ MERGED from [:amazon-cognito-identity-js] /home/marcos/Desktop/original/respiree
 MERGED from [:amazon-cognito-identity-js] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/amazon-cognito-identity-js/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-a-beep] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-a-beep/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-a-beep] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-a-beep/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44

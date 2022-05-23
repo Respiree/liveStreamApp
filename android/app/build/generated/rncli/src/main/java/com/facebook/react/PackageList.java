@@ -21,6 +21,8 @@ import com.reactnativecommunity.netinfo.NetInfoPackage;
 import com.amazonaws.RNAWSCognitoPackage;
 // expo
 import expo.modules.ExpoModulesPackage;
+// react-native-a-beep
+import com.trietho.RNReactNativeABeepPackage;
 // react-native-android-location-services-dialog-box
 import com.showlocationservicesdialogbox.LocationServicesDialogBoxPackage;
 // react-native-background-timer
@@ -99,6 +101,7 @@ public class PackageList {
       new NetInfoPackage(),
       new RNAWSCognitoPackage(),
       new ExpoModulesPackage(),
+      new RNReactNativeABeepPackage(),
       new LocationServicesDialogBoxPackage(),
       new BackgroundTimerPackage(),
       new BleManagerPackage(),

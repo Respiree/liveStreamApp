@@ -37,6 +37,8 @@ class PatientStore extends HydratedStore {
   @persist @observable noEvents = 100;
   @persist @observable restriction = false;
   @persist @observable isRegister = false;
+  @persist @observable peakDetectionInput = 9;
+  @persist @observable liveDataMovingAvg = 15;
   @persist('list', Sensor) @observable sensors = new Array<Sensor>()
   //=================================
 
@@ -47,6 +49,14 @@ class PatientStore extends HydratedStore {
 
   @action registerOk = (status:boolean)=>{
     this.isRegister = status;
+  }
+
+  @action setPeakDetection = (peakDetectionInput:number)=>{
+    this.peakDetectionInput = peakDetectionInput
+  }
+
+  @action setLiveDataMovingAvg = (liveDataMovingAvg:number)=>{
+    this.liveDataMovingAvg = liveDataMovingAvg
   }
 
   @action setProfile = (id:number, fName?:string, lName?:string, age?:number, ethnic?:string, height?:number, weight?:number, fev?:number, blood?:number, gender?:string) => {

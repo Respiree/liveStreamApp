@@ -13,7 +13,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-
+import com.reactlibrary.RNThreadPackage;
 
 import expo.modules.ApplicationLifecycleDispatcher;
 import expo.modules.ReactNativeHostWrapper;
@@ -48,7 +48,7 @@ public class MainApplication extends NavigationApplication {
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
           // Add unimodules
-          
+          packages.add(new RNThreadPackage(mReactNativeHost));
           packages.add(new CircularChartPackager());
           return packages;
         }

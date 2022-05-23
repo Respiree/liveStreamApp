@@ -14,6 +14,8 @@ target 'Respiree' do
   pod 'RNCharts', :path => '../node_modules/react-native-charts-wrapper'
   pod 'RNLocalize', :path => '../node_modules/react-native-localize'
 
+  pod 'RNThread', :path => '../node_modules/react-native-threads'
+
   target 'RespireeTests' do
     inherit! :complete
     # Pods for testing

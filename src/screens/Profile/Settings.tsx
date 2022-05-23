@@ -54,7 +54,7 @@ const Settings: React.FC = observer(({
     const [totalReceived, setTotalReceived] = useState(0);
     const [postCount, setPostCount] = useState(0);
     const [lapsedSec, setLapsedSec] = useState(0);
-
+    console.log('c', patient.peakDetectionInput)
     const settingsBleCb:BleCallback = (err:any, result:any)=>{
 
       if(!err){
@@ -513,7 +513,38 @@ const Settings: React.FC = observer(({
             textStyle={{fontSize:ms(12,0.8), color: (colors.white )}} title={'Back'} onPress={()=>{ nav.dismissAllOverlays();
         }}/>               
           </View>
-        {
+          <View>
+          <Text style={styles.settingsSubtitle}>SETTINGS</Text>
+          <BottomSpace height={5}/>
+          <View style={{paddingHorizontal:ms(20,0.5)}}>
+          <View style={styles.settingsBoxStyle}>
+          <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
+            <Text style={styles.settingsLabel}>Peak Detection Data Input</Text>
+             <TextInput style={styles.settings_input}
+             /*  value={(patient.peakDetectionInput).toString()} */
+              onChangeText = {(text)=> patient.setPeakDetection(Number(text))}
+              keyboardType = 'number-pad'
+              defaultValue={(patient.peakDetectionInput).toString()}
+              editable={true} 
+              underlineColorAndroid={colors.brownGrey}
+              multiline={false}
+              
+              />      
+          </View>
+          <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
+            <Text style={styles.settingsLabel}>Live Data Moving Average</Text>
+             <TextInput style={styles.settings_input}
+             defaultValue={(patient.liveDataMovingAvg).toString()}
+              editable={true}
+              underlineColorAndroid={colors.brownGrey}
+              multiline={false}
+              onChangeText = {(text)=> patient.setLiveDataMovingAvg(Number(text))}/>     
+          </View>
+          </View>  
+            <BottomSpace/>
+          </View>
+          </View>
+          {
           !_.isEmpty(currDevice)?(
             <View>
               <Text style={styles.subtitle}>{t.do("product_id")}</Text>
@@ -538,7 +569,6 @@ const Settings: React.FC = observer(({
         {
           !_.isEmpty(patient.sensors)?(
             <View >
-
               <Text style={styles.subtitle}>{t.do("curr_device")}</Text>
               <BottomSpace height={5}/>
               <View style={{paddingHorizontal:ms(20,0.5)}}>
@@ -556,6 +586,7 @@ const Settings: React.FC = observer(({
               </View>
               <BottomSpace/>
             </View>
+       
           ):null
         }
         {
@@ -623,6 +654,20 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     color: theme.colors.darkGrey,
     paddingHorizontal:ms(20,0.5)
   },
+  settingsSubtitle:{
+    fontSize: ms(10,0.8),
+    fontFamily: 'karla_bold',
+    color: theme.colors.darkGrey,
+    paddingHorizontal:ms(20,0.5),
+  },
+  settingsLabel:{
+    fontSize: ms(10,0.8),
+    fontFamily: 'karla_bold',
+    color: theme.colors.darkGrey,
+    alignItems:'center',
+    alignSelf:"center",
+    paddingHorizontal:ms(20,0.5)
+  },
   switchLabel:{
     fontSize: ms(14,0.5),
     fontFamily: 'karla_bold',
@@ -636,6 +681,15 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
     minHeight: ms(45,0.5),
     backgroundColor:'transparent',
     paddingHorizontal:ms(5,0.5)
+  },
+  settingsBoxStyle:{
+    borderWidth: Platform.OS=="android"?3:1,
+    borderColor:theme.colors.brownGrey,
+    borderRadius:ms(10,0.5),
+    minHeight: ms(45,0.5),
+    backgroundColor:'transparent',
+    marginHorizontal:ms(5,0.5),
+
   },
   listItemText:{
     fontSize: ms(12,0.5),
@@ -667,6 +721,14 @@ const _styles = (theme: ThemeType) => ScaledSheet.create({
   },
   edit_input:{
     height: ms(35,0.5),
+    borderColor: 'black',
+    borderWidth: 1,
+    fontFamily: 'karla_regular',
+    fontSize: ms(14, 0.8),
+    color: theme.colors.brownGrey,
+    paddingHorizontal: ms(5, 0.5)
+  },
+  settings_input: {
     borderColor: 'black',
     borderWidth: 1,
     fontFamily: 'karla_regular',
