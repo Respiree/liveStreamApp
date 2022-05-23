@@ -7,7 +7,7 @@ import SyncModal from 'src/components/SyncModal';
 import BleConErr from 'src/components/BleConErr';
 import Spinner from 'src/components/Spinner';
 import Initializing from 'src/screens/Initiliazing';
-import LiveData from 'src/screens/LiveData';
+import LiveData from '../../../LiveData'
 import { TopBarButtons } from './buttons';
 import { Options, OptionsModalPresentationStyle } from 'react-native-navigation';
 
