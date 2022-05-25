@@ -39,6 +39,9 @@ class PatientStore extends HydratedStore {
   @persist @observable isRegister = false;
   @persist @observable peakDetectionInput = 9;
   @persist @observable liveDataMovingAvg = 15;
+  @persist @observable pkLag = 30;
+  @persist @observable pkThreshold = 1.5;
+  @persist @observable pkInfluence = 0.5;
   @persist('list', Sensor) @observable sensors = new Array<Sensor>()
   //=================================
 
@@ -57,6 +60,18 @@ class PatientStore extends HydratedStore {
 
   @action setLiveDataMovingAvg = (liveDataMovingAvg:number)=>{
     this.liveDataMovingAvg = liveDataMovingAvg
+  }
+
+  @action setPkLag= (pkLag:number)=>{
+    this.pkLag = pkLag
+  }
+  
+  @action setPkThreshold= (pkThreshold:number)=>{
+    this.pkThreshold = pkThreshold
+  }
+
+  @action setPkInfluence= (pkInfluence:number)=>{
+    this.pkInfluence = pkInfluence
   }
 
   @action setProfile = (id:number, fName?:string, lName?:string, age?:number, ethnic?:string, height?:number, weight?:number, fev?:number, blood?:number, gender?:string) => {

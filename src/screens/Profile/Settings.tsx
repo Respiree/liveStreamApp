@@ -519,6 +519,15 @@ const Settings: React.FC = observer(({
           <View style={{paddingHorizontal:ms(20,0.5)}}>
           <View style={styles.settingsBoxStyle}>
           <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
+            <Text style={styles.settingsLabel}>Live Data Moving Average</Text>
+             <TextInput style={styles.settings_input}
+             defaultValue={(patient.liveDataMovingAvg).toString()}
+              editable={true}
+              underlineColorAndroid={colors.brownGrey}
+              multiline={false}
+              onChangeText = {(text)=> patient.setLiveDataMovingAvg(Number(text))}/>     
+          </View>
+          <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
             <Text style={styles.settingsLabel}>Peak Detection Data Input</Text>
              <TextInput style={styles.settings_input}
              /*  value={(patient.peakDetectionInput).toString()} */
@@ -530,16 +539,34 @@ const Settings: React.FC = observer(({
               multiline={false}
               
               />      
-          </View>
+          </View>          
           <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
-            <Text style={styles.settingsLabel}>Live Data Moving Average</Text>
+            <Text style={styles.settingsLabel}>Peak Detection Lag</Text>
              <TextInput style={styles.settings_input}
-             defaultValue={(patient.liveDataMovingAvg).toString()}
+             defaultValue={(patient.pkLag).toString()}
               editable={true}
               underlineColorAndroid={colors.brownGrey}
               multiline={false}
-              onChangeText = {(text)=> patient.setLiveDataMovingAvg(Number(text))}/>     
+              onChangeText = {(text)=> patient.setPkLag(Number(text))}/>     
           </View>
+          <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
+            <Text style={styles.settingsLabel}>Peak Detection Threshold</Text>
+             <TextInput style={styles.settings_input}
+             defaultValue={(patient.pkThreshold).toString()}
+              editable={true}
+              underlineColorAndroid={colors.brownGrey}
+              multiline={false}
+              onChangeText = {(text)=> patient.setPkThreshold(Number(text))}/>     
+          </View>
+          <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
+            <Text style={styles.settingsLabel}>Peak Detection Influence</Text>
+             <TextInput style={styles.settings_input}
+             defaultValue={(patient.pkInfluence).toString()}
+              editable={true}
+              underlineColorAndroid={colors.brownGrey}
+              multiline={false}
+              onChangeText = {(text)=> patient.setPkInfluence(Number(text))}/>     
+          </View>                              
           </View>  
             <BottomSpace/>
           </View>

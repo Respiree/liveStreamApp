@@ -20,6 +20,7 @@ import { Platform, StatusBar} from 'react-native';
 import ToggleSwitch from 'toggle-switch-react-native'
 import RNBeep from 'react-native-a-beep';
 import { Thread } from 'react-native-threads';
+import zScorePeakDetect from '../respiree-app-src-20220427/pkdetection';
 
 
 let sensor1:number[] = [];
@@ -34,6 +35,7 @@ let mIsLiveMode = false;
 let resultConversion = 0;
 let rr_flag = 0;
 let timer = 2;
+
 
 const DISPLAY_UPDATE_MSEC = 250;
 const MIN_RECORDS = 25;
@@ -105,46 +107,13 @@ const LiveData: React.FC = observer(({
   const [rrFlag, setRRflag] = useState(0)
   //settings
   const [isEnabled, setIsEnabled] = useState(false);
-
+  const [peakDetectionCounter, setPeakDetectionCounter] = useState(0)
+  //need to have counter, lets say 15 data points
   /* const [RawConvertArr, setRawConvertArr] = useState<any>([])  */
   let thisInterval;
   
-
+  
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
-  const toBeep = (function(arrLen){
-    // const arrLen = 20; 
-    let prevArr = [];
-    let prevOver = false; 
-    let arrMean = 0; 
-    let lastBeep = false; 
-    function pushToArr(packet){
-        prevArr.push.apply(prevArr, packet)
-        if(prevArr.length > arrLen){
-            prevArr.splice(0,prevArr.length-arrLen)
-        }
-        arrMean = prevArr.reduce((a, b) => a + b, 0) / prevArr.length;
-    }
-    function beepComputer(packet){
-        let toBeep = false; 
-        let currLastBeep = lastBeep; 
-        for (let i=0; i<packet.length; i++){
-            if(!currLastBeep && packet[i]>arrMean){
-                toBeep = true;
-                currLastBeep = true; 
-            } else if(currLastBeep && packet[i]<=arrMean){
-                currLastBeep = false
-            }
-        }
-        // console.log(toBeep, lastBeep, arrMean, packet)
-        pushToArr(packet)
-        lastBeep = currLastBeep;
-        console.log('beep', toBeep)
-        if(toBeep) RNBeep.beep();
-        return toBeep;
-    }
-
-    return beepComputer;
-})(2000)
 
 
   const liveDataBleCb:BleCallback = (err:any, result:any)=>{
@@ -362,9 +331,24 @@ const LiveData: React.FC = observer(({
               array.push(value);
           }
       }
-      if(array.length >= patient.peakDetectionInput && isEnabled)
+      if(peakDetectionCounter === 0 && array.length>= patient.peakDetectionInput)
       {
-        toBeep(array.slice(0, patient.peakDetectionInput))
+        if(isEnabled){
+        let processor = zScorePeakDetect({
+            lag: patient.pkLag,
+            threshold: patient.pkThreshold, 
+            influence: patient.pkInfluence
+        })
+        let arraySlice = array.slice(patient.peakDetectionInput-1)
+        let isPeak = processor.toBeep(arraySlice)
+        console.log('isPeak: ', isPeak)
+        if(isPeak)RNBeep.beep();
+      }
+        setPeakDetectionCounter(patient.peakDetectionInput)
+      }
+      else{
+        console.log(peakDetectionCounter)
+        setPeakDetectionCounter((prev)=>prev-1);
       }
 
       return array;
@@ -472,9 +456,10 @@ workerThread.onmessage = (message) => console.log(message);
       }  
       else {
         console.log('not enough data',  rawArr.length)
+        console.log('params', patient.pkInfluence, patient.pkThreshold, patient.pkLag)
       }
       rr_flag = 0;  
-    }, 5000);
+    }, 10000);
   }, [])
   
   workerThread.onmessage = (message) => {
