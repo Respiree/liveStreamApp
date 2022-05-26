@@ -527,19 +527,7 @@ const Settings: React.FC = observer(({
               multiline={false}
               onChangeText = {(text)=> patient.setLiveDataMovingAvg(Number(text))}/>     
           </View>
-          <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
-            <Text style={styles.settingsLabel}>Peak Detection Data Input</Text>
-             <TextInput style={styles.settings_input}
-             /*  value={(patient.peakDetectionInput).toString()} */
-              onChangeText = {(text)=> patient.setPeakDetection(Number(text))}
-              keyboardType = 'number-pad'
-              defaultValue={(patient.peakDetectionInput).toString()}
-              editable={true} 
-              underlineColorAndroid={colors.brownGrey}
-              multiline={false}
-              
-              />      
-          </View>          
+        
           <View style={{ flexDirection:"row", alignContent:"center", justifyContent:'space-between'}}>
             <Text style={styles.settingsLabel}>Peak Detection Lag</Text>
              <TextInput style={styles.settings_input}

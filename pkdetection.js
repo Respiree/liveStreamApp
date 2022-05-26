@@ -1,23 +1,26 @@
 export const zScorePeakDetect = (function(params){
     var p = params || {}
     // init cooefficients
-    const lag = p.lag || 5
-    const threshold = p.threshold || 3.5
-    const influence = p.influece || 0.5
+    let lag = p.lag || 5
+    let threshold = p.threshold || 3.5
+    let influence = p.influece || 0.5
 
     // var filteredY = 0
     var avgFilter = 0
     var stdFilter = 0
     var filteredY = new Array(lag).fill(0);
+
     var lastGradSignPositive = true;
     //console.log(`lag, threshold, influence: ${lag}, ${threshold}, ${influence}`)
 
     function sum(a) {
         return a.reduce((acc, val) => acc + val)
     }
+
     function mean(a) {
         return sum(a) / a.length
     }
+
     function stddev(arr) {
         const arr_mean = mean(arr)
         const r = function(acc, val) {
@@ -25,6 +28,7 @@ export const zScorePeakDetect = (function(params){
         }
         return Math.sqrt(arr.reduce(r, 0.0) / arr.length)
     }
+
     function peakFound(y) {
         // if (y === undefined || y.length < lag + 2) {
         //     throw ` ## y data array to short(${y.length}) for given lag of ${lag}`
@@ -34,8 +38,11 @@ export const zScorePeakDetect = (function(params){
         var toBeep = false
         // var filteredY = y.slice(0)
         const lead_in = y.slice(0, lag)
+
         let prevGradSignPositive = lastGradSignPositive;
         let currGradSignPositive = lastGradSignPositive; 
+
+
         // console.log(avgFilter.toFixed(2), stdFilter.toFixed(2))
         let grad_arr=[]
         for (var i = 0; i < y.length; i++) {
@@ -59,6 +66,7 @@ export const zScorePeakDetect = (function(params){
                 grad_arr.push("_")
             }
             filteredY = filteredY.slice(1, lag)
+
             if(prevGradSignPositive && !(currGradSignPositive)){
                 // console.log(prevGradSignPositive,currGradSignPositive, "BEEP!")
                 toBeep = true;
@@ -81,14 +89,29 @@ export const zScorePeakDetect = (function(params){
         // console.log(grad_arr)
         return toBeep
     }
+
+    // const lag = p.lag || 5
+    // const threshold = p.threshold || 3.5
+    // const influence = p.influece || 0.5
+    function updateLagValue(newLagValue){
+        // console.log("updating lag to ", newLagValue);
+        lag = newLagValue;
+    }
+    
+    function updateThresholdValue(newThresholdValue){
+        // console.log("updating threshold to ", newThresholdValue);
+        threshold = newThresholdValue;
+    } 
+    
+    function updateInfluenceValue(newInfluenceValue){
+        // console.log("updating influence to ", newInfluenceValue);
+        influence = newInfluenceValue;
+    }
+
     return {
-        toBeep:peakFound
+        toBeep: peakFound,
+        updateLagValue: updateLagValue,
+        updateThresholdValue: updateThresholdValue,
+        updateInfluenceValue: updateInfluenceValue
     }
 })
-// ({
-//     lag: 5,
-//     threshold: 3.5, 
-//     influence: 0.01
-// // })
-
-export default zScorePeakDetect;

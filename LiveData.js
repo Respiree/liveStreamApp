@@ -179,6 +179,8 @@ const LiveData: React.FC = observer(({
             if(result.temperature && result.temperature != temperature) {
                 setTemperature(result.temperature)
             }
+
+
             chartUpdate();
           }
         }
@@ -260,23 +262,31 @@ const LiveData: React.FC = observer(({
 
   useEffect(()=>{
       if(isAddData) {
-/*           console.log("* sensor1: " + sensor1.length + ", sensor2: " + sensor2.length) */
-          if(sensor1.length > 0 && isSensor1On){
-              
+          if(sensor1.length > 0 && isSensor1On){      
               let sliceLen = sensor1.length > (MAX_RECORDS+patient.liveDataMovingAvg) ? (MAX_RECORDS+patient.liveDataMovingAvg) : sensor1.length;
-              let newArray = sensor1.slice(0,sliceLen);
-             /*  console.log("# sensor1:" + sensor1.length+ " sliceLen: " + sliceLen + ", arrayLen: " + newArray.length); */
-              setSensor1(fillArray(MAX_RECORDS, newArray));
-              //let sliceLen = sensor1.length > MAX_RECORDS ? MAX_RECORDS : sensor1.length;
-              //let newArray = sensor1.slice(0,sliceLen);
-              //setSensor1(newArray);//newArray);
+              let newArray = sensor1.slice(0,sliceLen);     
+              let processedArr = fillArray(MAX_RECORDS, newArray);
+     
+              //used by live graph
+              setSensor1(processedArr);
+
+              //run peak detection algo
+              if(isEnabled){
+                let processor = zScorePeakDetect()
+                processor.updateLagValue( patient.pkLag )
+                processor.updateThresholdValue( patient.pkThreshold )
+                processor.updateInfluenceValue( patient.pkInfluence )
+                let isPeak = processor.toBeep(processedArr)
+                if(isPeak)RNBeep.beep();
+              }
+
           } else {
               setSensor1([]);
           }
           if(sensor2.length > 0 && isSensor2On) {
               let sliceLen = sensor2.length > (MAX_RECORDS+patient.liveDataMovingAvg) ? (MAX_RECORDS+patient.liveDataMovingAvg) : sensor2.length;
               let newArray2 = sensor2.slice(0, sliceLen)
-              //console.log("# sensor2:" + sensor2.length + " sliceLen: " + sliceLen + ", arrayLen: " + newArray2.length);
+     
               setSensor2(fillArray(MAX_RECORDS, newArray2));
           } else {
               setSensor2([]);
@@ -331,26 +341,6 @@ const LiveData: React.FC = observer(({
               array.push(value);
           }
       }
-      if(peakDetectionCounter === 0 && array.length>= patient.peakDetectionInput)
-      {
-        if(isEnabled){
-        let processor = zScorePeakDetect({
-            lag: patient.pkLag,
-            threshold: patient.pkThreshold, 
-            influence: patient.pkInfluence
-        })
-        let arraySlice = array.slice(patient.peakDetectionInput-1)
-        let isPeak = processor.toBeep(arraySlice)
-        console.log('isPeak: ', isPeak)
-        if(isPeak)RNBeep.beep();
-      }
-        setPeakDetectionCounter(patient.peakDetectionInput)
-      }
-      else{
-        console.log(peakDetectionCounter)
-        setPeakDetectionCounter((prev)=>prev-1);
-      }
-
       return array;
   }
 

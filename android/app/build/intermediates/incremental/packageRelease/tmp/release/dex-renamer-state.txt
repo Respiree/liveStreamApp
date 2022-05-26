@@ -1,7 +1,0 @@
-#Wed May 25 13:00:44 MYT 2022
-base.0=/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
-path.1=classes2.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=/home/marcos/Desktop/original/respiree-app-src-20220427/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
