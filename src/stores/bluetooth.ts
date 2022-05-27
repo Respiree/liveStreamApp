@@ -346,7 +346,7 @@ class BleStore extends HydratedStore {
                   dataOffset = 4;
                   temperature = (Number(value[3])/10 + 30);
 
-                  console.log("counter: " + value[2] + ", misc: " + value[1] + ", temp: " + temperature)
+                 /*  console.log("counter: " + value[2] + ", misc: " + value[1] + ", temp: " + temperature) */
 
 
               }

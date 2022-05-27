@@ -20,7 +20,8 @@ import { Platform, StatusBar} from 'react-native';
 import ToggleSwitch from 'toggle-switch-react-native'
 import RNBeep from 'react-native-a-beep';
 import { Thread } from 'react-native-threads';
-import zScorePeakDetect from '../respiree-app-src-20220427/pkdetection';
+import { zScorePeakDetect } from '../respiree-app-src-20220427/pkdetection';
+/* import zScorePeakDetect from '../respiree-app-src-20220427/pkdetection'; */
 
 
 let sensor1:number[] = [];
@@ -112,7 +113,7 @@ const LiveData: React.FC = observer(({
   /* const [RawConvertArr, setRawConvertArr] = useState<any>([])  */
   let thisInterval;
   
-  
+  let processor = zScorePeakDetect()
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
 
@@ -266,17 +267,17 @@ const LiveData: React.FC = observer(({
               let sliceLen = sensor1.length > (MAX_RECORDS+patient.liveDataMovingAvg) ? (MAX_RECORDS+patient.liveDataMovingAvg) : sensor1.length;
               let newArray = sensor1.slice(0,sliceLen);     
               let processedArr = fillArray(MAX_RECORDS, newArray);
-     
+              console.log('processed Arr', processedArr,  processedArr.length)
               //used by live graph
               setSensor1(processedArr);
 
               //run peak detection algo
               if(isEnabled){
-                let processor = zScorePeakDetect()
                 processor.updateLagValue( patient.pkLag )
                 processor.updateThresholdValue( patient.pkThreshold )
                 processor.updateInfluenceValue( patient.pkInfluence )
                 let isPeak = processor.toBeep(processedArr)
+                console.log('isPeak', isPeak)
                 if(isPeak)RNBeep.beep();
               }
 
@@ -445,8 +446,8 @@ workerThread.onmessage = (message) => console.log(message);
       /*   console.log('final result', resultConversion); */
       }  
       else {
-        console.log('not enough data',  rawArr.length)
-        console.log('params', patient.pkInfluence, patient.pkThreshold, patient.pkLag)
+        //console.log('not enough data',  rawArr.length)
+        //console.log('params', patient.pkInfluence, patient.pkThreshold, patient.pkLag)
       }
       rr_flag = 0;  
     }, 10000);
