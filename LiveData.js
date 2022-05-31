@@ -109,6 +109,8 @@ const LiveData: React.FC = observer(({
   //settings
   const [isEnabled, setIsEnabled] = useState(false);
   const [peakDetectionCounter, setPeakDetectionCounter] = useState(0)
+  const [newDataLength, setNewDataLength] = useState(0)
+  const [prevDataLength, setPrevDataLength] = useState(0)
   //need to have counter, lets say 15 data points
   /* const [RawConvertArr, setRawConvertArr] = useState<any>([])  */
   let thisInterval;
@@ -149,6 +151,7 @@ const LiveData: React.FC = observer(({
           if(result.sensor1 >= MIN_SENSOR_VALUE ) {
               if(sensor1.length > (MAX_RECORDS+patient.liveDataMovingAvg)) sensor1.shift();
               sensor1.push(result.sensor1);
+              setNewDataLength((prev)=>prev+1);
           }
 
     
@@ -261,25 +264,27 @@ const LiveData: React.FC = observer(({
     bluetooth.init();
   }, componentId);
 
-  useEffect(()=>{
+useEffect(()=>{
       if(isAddData) {
           if(sensor1.length > 0 && isSensor1On){      
               let sliceLen = sensor1.length > (MAX_RECORDS+patient.liveDataMovingAvg) ? (MAX_RECORDS+patient.liveDataMovingAvg) : sensor1.length;
               let newArray = sensor1.slice(0,sliceLen);     
               let processedArr = fillArray(MAX_RECORDS, newArray);
-              console.log('processed Arr', processedArr,  processedArr.length)
-              //used by live graph
+              //new added length - prev length = new data points to be fed to algo
+              let sliceLength = newDataLength - prevDataLength
+              console.log('slice', sliceLength)
               setSensor1(processedArr);
-
               //run peak detection algo
-              if(isEnabled){
+              if(isEnabled && sliceLength && processedArr){
                 processor.updateLagValue( patient.pkLag )
                 processor.updateThresholdValue( patient.pkThreshold )
                 processor.updateInfluenceValue( patient.pkInfluence )
-                let isPeak = processor.toBeep(processedArr)
+                let isPeak = processor.toBeep(processedArr.slice(-sliceLength))
                 console.log('isPeak', isPeak)
                 if(isPeak)RNBeep.beep();
               }
+
+              setPrevDataLength(newDataLength)
 
           } else {
               setSensor1([]);

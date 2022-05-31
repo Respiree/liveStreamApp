@@ -33,6 +33,8 @@ import it.innove.BleManagerPackage;
 import com.github.wuxudong.rncharts.MPAndroidChartPackage;
 // react-native-device-info
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
+// react-native-fetch-blob
+import com.RNFetchBlob.RNFetchBlobPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-localize
@@ -107,6 +109,7 @@ public class PackageList {
       new BleManagerPackage(),
       new MPAndroidChartPackage(),
       new RNDeviceInfo(),
+      new RNFetchBlobPackage(),
       new RNGestureHandlerPackage(),
       new RNLocalizePackage(),
       new NavigationPackage(reactNativeHost),

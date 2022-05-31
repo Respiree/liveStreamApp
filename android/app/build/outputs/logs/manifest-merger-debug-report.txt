@@ -20,6 +20,7 @@ MERGED from [:react-native-background-timer] /home/marcos/Desktop/original/respi
 MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-charts-wrapper] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-charts-wrapper/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-device-info] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-gesture-handler] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-localize] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Debug/AndroidManifest.xml:2:1-15:12
@@ -177,6 +178,8 @@ application
 ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:11:5-60:19
 MERGED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:11:5-60:19
 MERGED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:11:5-60:19
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Debug/AndroidManifest.xml:9:5-13:19
 MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Debug/AndroidManifest.xml:9:5-13:19
 MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-35:19
@@ -346,6 +349,8 @@ MERGED from [:react-native-charts-wrapper] /home/marcos/Desktop/original/respire
 MERGED from [:react-native-charts-wrapper] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-charts-wrapper/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-device-info] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-device-info] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-localize] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-localize/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
