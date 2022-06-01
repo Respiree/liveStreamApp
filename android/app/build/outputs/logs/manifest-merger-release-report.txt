@@ -1,0 +1,573 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+MERGED from [hermes-release.aar] /home/marcos/.gradle/caches/transforms-2/files-2.1/5fffaa44a50b61caf917bbde3c1466dc/jetified-hermes-release/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-threads] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-threads/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-async-storage_async-storage] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_masked-view] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-12:12
+MERGED from [:amazon-cognito-identity-js] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/amazon-cognito-identity-js/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-a-beep] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-a-beep/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-charts-wrapper] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-charts-wrapper/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-device-info] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-gesture-handler] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-localize] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-localize/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-permissions] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-permissions/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-svg/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:rn-secure-storage] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/rn-secure-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-application] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-application/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-constants] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-constants/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-error-recovery] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-37:12
+MERGED from [:expo-font] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-font/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-keep-awake] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-17:12
+MERGED from [com.facebook.react:react-native:0.63.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/97225bce7e334d124b06555480449961/jetified-react-native-0.63.4/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/84fc09d3cb8239a0738f794c8654ad92/jetified-fresco-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/04780e1ceac4a53b367c5a638c6e26d3/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/8d1dfa2777be7e685ca7e094467167b6/jetified-animated-gif-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:webpsupport:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e986a260619bf497ee1a5ebe025e3c55/jetified-webpsupport-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.wix-playground:reflow-animator:1.0.6] /home/marcos/.gradle/caches/transforms-2/files-2.1/ee03b65fa8d68b578624d8545997819e/jetified-reflow-animator-1.0.6/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/848824ed68f1e24ddde93fcfb49bd65a/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/64885dce6a45e1c34c52de305c1a35a8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/3c953dd74b663004bfa299f3551308ba/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1a1b2b5e2383dc89ea57a61826ec136c/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-android-location-services-dialog-box] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-android-location-services-dialog-box/android/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-reanimated] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-reanimated/android/build/.transforms/4a9b861f4de0d84dfcf4cd2eb31ac079/jetified-react-native-reanimated-63/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/1cf6a8ca7af6741cfbfc7396fbedc896/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/0b503e01f0ee4e08497ae39b7c51e699/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /home/marcos/.gradle/caches/transforms-2/files-2.1/72b7db67de001bc060848bf9ff76b711/material-1.2.0-alpha03/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/c690902e490de7df879b786cd7576210/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/50ab8f729a8ab587aff9af5a38297bf0/jetified-animated-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a8b4990412924fce5732ebc9c194d080/jetified-animated-drawable-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/9e8f2ecf127b130963a60aafb1097b4e/jetified-drawee-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/beeea5114c3f4f570a476a79f2194d7c/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/abfdbd64ea2f0685ad327d4fa7838e50/jetified-imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/6ede252554f2aa7ce72846ea0b859279/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/538d63a9151fa8fcccdb0ffadd2ced7b/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f261efe164d2bc6af70d6109679bb031/jetified-soloader-0.9.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1502f66ded8f360a4a5a6848a6bea527/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.media:media:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1f0e44dec615696fb64bbb165d8561c4/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a5d5a3d9d3036d711301ac1938874918/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/784cd9113520a8105a033744c1e87f58/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/19a7d8ab376d0b47e7ccf42babb1e852/jetified-core-ktx-1.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f6aa53bbe61c381d54f02aad71604c68/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f2924c2ce75e7fbc6f24b10b0200786f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/8f7119d3317b6fa6f575e2601bc62924/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /home/marcos/.gradle/caches/transforms-2/files-2.1/47d4663eed1e1f28758fc1549ad8d1bb/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f1daa903c27343116bff0cb2ca53d69a/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f9fde61f303ab4b6605f1fc4c72363d0/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2ae380a31cbeca17423d02b31baf597c/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a25564b4e0e3789b6088a4613d80757e/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2e54c50239704440e3e57b53c0c5717f/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/967b1e81a1494ffe4a74a8ebd386851c/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d8f597d71f7e033449367052f6643ba3/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.2.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/43261d7a055572bf1625a9918c7cfffd/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/a44237ea665fd7d2e073fe410a41fd7b/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/4ac0c9f6ab084a2ee6eabbd3b15e6367/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/43bc2c227e4db5b80b5c306e995b037f/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c51e504884e8c881df16e2d902c0ffc4/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d56844abb2393d7627cb1720ebf0d936/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c34482b113289858b50331484c28e8f5/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/cc5f3df7b01196bfe79742abbe929a8d/jetified-MPAndroidChart-v3.1.0/AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/cac632bd02759366cabe729a7dcbd0cc/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b23d5909799131d4653e23874ece406f/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b6f82671cd59dff0689400d175b36c2d/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b4598a90f18f7d26eaa129d7d20b8a9b/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/90b2ae4db3937a86baa7b092cb1569bf/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a3411fcef564a05e064c7192f738e53d/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/838c460c812917d24829bd2837d5eec7/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/ba7e01fe29ed093c281ccd263a75323c/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/eccb612ef86e16de9cd7dd75319fab46/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/f251e8928cebe9f8dd33271b0d836fed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2eb0b8884315658194848df33d572d2a/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/4ed2f9637c18d5de961d21b58e88ff29/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/75857a70da88fd56804a4f6fd4205a2a/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c062b430b06178e71d44357e29f3b80f/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.clans:fab:1.6.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/5880a97c1627b125bbdfcb905d2bebe7/jetified-fab-1.6.4/AndroidManifest.xml:2:1-14:12
+MERGED from [com.scottyab:secure-preferences-lib:0.1.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/fd0037662fbfbb1f5e31e277d3ce90b7/jetified-secure-preferences-lib-0.1.4/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/870641cf3f31dfc8e13ebc5caa10f09b/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.scottyab:aes-crypto:0.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/6b97e4bc6a3468e6be3a49d29a8378ef/jetified-aes-crypto-0.0.4/AndroidManifest.xml:2:1-12:12
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+	package
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:3:3-29
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:1:1-62:12
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:2:3-61
+uses-permission#android.permission.INTERNET
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-67
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-68
+MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:6:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:7:5-73
+MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-74
+MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-74
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:7:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:8:5-79
+MERGED from [:react-native-android-location-services-dialog-box] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-android-location-services-dialog-box/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-79
+MERGED from [:react-native-android-location-services-dialog-box] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-android-location-services-dialog-box/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:9:5-81
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:5-81
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:10:5-80
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-80
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:10:22-77
+application
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:11:5-60:19
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:9:5-13:19
+MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:9:5-13:19
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:5-35:19
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:24:5-35:19
+MERGED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-15:19
+MERGED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-15:19
+MERGED from [com.facebook.react:react-native:0.63.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/97225bce7e334d124b06555480449961/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/97225bce7e334d124b06555480449961/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/1cf6a8ca7af6741cfbfc7396fbedc896/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/1cf6a8ca7af6741cfbfc7396fbedc896/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/0b503e01f0ee4e08497ae39b7c51e699/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:11:5-20
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/0b503e01f0ee4e08497ae39b7c51e699/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /home/marcos/.gradle/caches/transforms-2/files-2.1/72b7db67de001bc060848bf9ff76b711/material-1.2.0-alpha03/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /home/marcos/.gradle/caches/transforms-2/files-2.1/72b7db67de001bc060848bf9ff76b711/material-1.2.0-alpha03/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f261efe164d2bc6af70d6109679bb031/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f261efe164d2bc6af70d6109679bb031/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a5d5a3d9d3036d711301ac1938874918/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a5d5a3d9d3036d711301ac1938874918/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f2924c2ce75e7fbc6f24b10b0200786f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f2924c2ce75e7fbc6f24b10b0200786f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d56844abb2393d7627cb1720ebf0d936/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d56844abb2393d7627cb1720ebf0d936/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/f251e8928cebe9f8dd33271b0d836fed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/f251e8928cebe9f8dd33271b0d836fed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:11:5-20
+MERGED from [com.github.clans:fab:1.6.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/5880a97c1627b125bbdfcb905d2bebe7/jetified-fab-1.6.4/AndroidManifest.xml:12:5-20
+MERGED from [com.github.clans:fab:1.6.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/5880a97c1627b125bbdfcb905d2bebe7/jetified-fab-1.6.4/AndroidManifest.xml:12:5-20
+MERGED from [com.scottyab:secure-preferences-lib:0.1.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/fd0037662fbfbb1f5e31e277d3ce90b7/jetified-secure-preferences-lib-0.1.4/AndroidManifest.xml:11:5-12:19
+MERGED from [com.scottyab:secure-preferences-lib:0.1.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/fd0037662fbfbb1f5e31e277d3ce90b7/jetified-secure-preferences-lib-0.1.4/AndroidManifest.xml:11:5-12:19
+MERGED from [com.scottyab:aes-crypto:0.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/6b97e4bc6a3468e6be3a49d29a8378ef/jetified-aes-crypto-0.0.4/AndroidManifest.xml:10:5-20
+MERGED from [com.scottyab:aes-crypto:0.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/6b97e4bc6a3468e6be3a49d29a8378ef/jetified-aes-crypto-0.0.4/AndroidManifest.xml:10:5-20
+	android:requestLegacyExternalStorage
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:17:7-50
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d56844abb2393d7627cb1720ebf0d936/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:13:7-39
+	android:roundIcon
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:15:7-52
+	android:icon
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:14:7-41
+	android:allowBackup
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:16:7-34
+	android:theme
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:18:7-38
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:12:7-38
+meta-data#expo.modules.updates.EXPO_UPDATE_URL
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:20:9-126
+	android:value
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:20:72-123
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:20:20-71
+meta-data#expo.modules.updates.EXPO_SDK_VERSION
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:21:9-98
+	android:value
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:21:73-95
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:21:20-72
+meta-data#expo.modules.updates.ENABLED
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:22:9-24:33
+	android:value
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:24:11-31
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:23:11-54
+meta-data#expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:25:9-27:34
+	android:value
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:27:11-32
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:26:11-75
+meta-data#expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:28:9-30:30
+	android:value
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:30:11-28
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:29:11-74
+meta-data#expo.modules.updates.EXPO_RELEASE_CHANNEL
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:32:9-99
+	android:value
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:32:77-96
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:32:20-76
+activity#com.respiree.app.MainActivity
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:45:3-56:20
+	android:screenOrientation
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:47:11-48
+	android:label
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:48:11-43
+	android:launchMode
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:50:11-42
+	android:windowSoftInputMode
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:51:11-53
+	android:configChanges
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:49:11-88
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:46:5-33
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:52:13-55:29
+action#android.intent.action.MAIN
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:53:17-69
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:53:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:54:17-77
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:54:27-74
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:58:9-86
+MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:10:9-12:40
+MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:10:9-12:40
+	android:exported
+		ADDED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml:58:19-83
+uses-sdk
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+MERGED from [hermes-release.aar] /home/marcos/.gradle/caches/transforms-2/files-2.1/5fffaa44a50b61caf917bbde3c1466dc/jetified-hermes-release/AndroidManifest.xml:5:5-44
+MERGED from [hermes-release.aar] /home/marcos/.gradle/caches/transforms-2/files-2.1/5fffaa44a50b61caf917bbde3c1466dc/jetified-hermes-release/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-threads] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-threads/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-threads] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-threads/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-async-storage_async-storage] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-async-storage_async-storage] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:amazon-cognito-identity-js] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/amazon-cognito-identity-js/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:amazon-cognito-identity-js] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/amazon-cognito-identity-js/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-a-beep] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-a-beep/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-a-beep] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-a-beep/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-charts-wrapper] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-charts-wrapper/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-charts-wrapper] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-charts-wrapper/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-localize] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-localize/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-localize] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-localize/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-navigation] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-navigation/lib/android/app/build/intermediates/library_manifest/reactNative63Release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-permissions] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-permissions/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-permissions] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-permissions/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-screens/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-svg/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-svg/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-secure-storage] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/rn-secure-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-secure-storage] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/rn-secure-storage/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-application] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-application/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-application] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-application/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-constants/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-constants/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-error-recovery] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-error-recovery] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-font] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-font/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-font] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-font/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/97225bce7e334d124b06555480449961/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/97225bce7e334d124b06555480449961/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/84fc09d3cb8239a0738f794c8654ad92/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/84fc09d3cb8239a0738f794c8654ad92/jetified-fresco-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/04780e1ceac4a53b367c5a638c6e26d3/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/04780e1ceac4a53b367c5a638c6e26d3/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/8d1dfa2777be7e685ca7e094467167b6/jetified-animated-gif-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-gif:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/8d1dfa2777be7e685ca7e094467167b6/jetified-animated-gif-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:webpsupport:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e986a260619bf497ee1a5ebe025e3c55/jetified-webpsupport-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:webpsupport:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e986a260619bf497ee1a5ebe025e3c55/jetified-webpsupport-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.wix-playground:reflow-animator:1.0.6] /home/marcos/.gradle/caches/transforms-2/files-2.1/ee03b65fa8d68b578624d8545997819e/jetified-reflow-animator-1.0.6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wix-playground:reflow-animator:1.0.6] /home/marcos/.gradle/caches/transforms-2/files-2.1/ee03b65fa8d68b578624d8545997819e/jetified-reflow-animator-1.0.6/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/848824ed68f1e24ddde93fcfb49bd65a/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/848824ed68f1e24ddde93fcfb49bd65a/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/64885dce6a45e1c34c52de305c1a35a8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/64885dce6a45e1c34c52de305c1a35a8/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/3c953dd74b663004bfa299f3551308ba/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/3c953dd74b663004bfa299f3551308ba/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1a1b2b5e2383dc89ea57a61826ec136c/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1a1b2b5e2383dc89ea57a61826ec136c/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-android-location-services-dialog-box] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-android-location-services-dialog-box/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-android-location-services-dialog-box] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-android-location-services-dialog-box/android/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-reanimated/android/build/.transforms/4a9b861f4de0d84dfcf4cd2eb31ac079/jetified-react-native-reanimated-63/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-reanimated/android/build/.transforms/4a9b861f4de0d84dfcf4cd2eb31ac079/jetified-react-native-reanimated-63/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/1cf6a8ca7af6741cfbfc7396fbedc896/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/1cf6a8ca7af6741cfbfc7396fbedc896/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/0b503e01f0ee4e08497ae39b7c51e699/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/0b503e01f0ee4e08497ae39b7c51e699/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /home/marcos/.gradle/caches/transforms-2/files-2.1/72b7db67de001bc060848bf9ff76b711/material-1.2.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /home/marcos/.gradle/caches/transforms-2/files-2.1/72b7db67de001bc060848bf9ff76b711/material-1.2.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/c690902e490de7df879b786cd7576210/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/c690902e490de7df879b786cd7576210/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/50ab8f729a8ab587aff9af5a38297bf0/jetified-animated-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/50ab8f729a8ab587aff9af5a38297bf0/jetified-animated-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a8b4990412924fce5732ebc9c194d080/jetified-animated-drawable-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-drawable:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a8b4990412924fce5732ebc9c194d080/jetified-animated-drawable-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/9e8f2ecf127b130963a60aafb1097b4e/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/9e8f2ecf127b130963a60aafb1097b4e/jetified-drawee-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/beeea5114c3f4f570a476a79f2194d7c/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/beeea5114c3f4f570a476a79f2194d7c/jetified-nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/abfdbd64ea2f0685ad327d4fa7838e50/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/abfdbd64ea2f0685ad327d4fa7838e50/jetified-imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/6ede252554f2aa7ce72846ea0b859279/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/6ede252554f2aa7ce72846ea0b859279/jetified-nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/538d63a9151fa8fcccdb0ffadd2ced7b/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/538d63a9151fa8fcccdb0ffadd2ced7b/jetified-imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f261efe164d2bc6af70d6109679bb031/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.9.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f261efe164d2bc6af70d6109679bb031/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1502f66ded8f360a4a5a6848a6bea527/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1502f66ded8f360a4a5a6848a6bea527/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.media:media:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1f0e44dec615696fb64bbb165d8561c4/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/1f0e44dec615696fb64bbb165d8561c4/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a5d5a3d9d3036d711301ac1938874918/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a5d5a3d9d3036d711301ac1938874918/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/784cd9113520a8105a033744c1e87f58/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/784cd9113520a8105a033744c1e87f58/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/19a7d8ab376d0b47e7ccf42babb1e852/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/19a7d8ab376d0b47e7ccf42babb1e852/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f6aa53bbe61c381d54f02aad71604c68/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f6aa53bbe61c381d54f02aad71604c68/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f2924c2ce75e7fbc6f24b10b0200786f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f2924c2ce75e7fbc6f24b10b0200786f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/8f7119d3317b6fa6f575e2601bc62924/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/8f7119d3317b6fa6f575e2601bc62924/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/marcos/.gradle/caches/transforms-2/files-2.1/47d4663eed1e1f28758fc1549ad8d1bb/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/marcos/.gradle/caches/transforms-2/files-2.1/47d4663eed1e1f28758fc1549ad8d1bb/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f1daa903c27343116bff0cb2ca53d69a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f1daa903c27343116bff0cb2ca53d69a/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f9fde61f303ab4b6605f1fc4c72363d0/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/f9fde61f303ab4b6605f1fc4c72363d0/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2ae380a31cbeca17423d02b31baf597c/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2ae380a31cbeca17423d02b31baf597c/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a25564b4e0e3789b6088a4613d80757e/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a25564b4e0e3789b6088a4613d80757e/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2e54c50239704440e3e57b53c0c5717f/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2e54c50239704440e3e57b53c0c5717f/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/967b1e81a1494ffe4a74a8ebd386851c/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/967b1e81a1494ffe4a74a8ebd386851c/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d8f597d71f7e033449367052f6643ba3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d8f597d71f7e033449367052f6643ba3/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.2.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/43261d7a055572bf1625a9918c7cfffd/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/43261d7a055572bf1625a9918c7cfffd/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/a44237ea665fd7d2e073fe410a41fd7b/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/a44237ea665fd7d2e073fe410a41fd7b/jetified-appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/4ac0c9f6ab084a2ee6eabbd3b15e6367/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/4ac0c9f6ab084a2ee6eabbd3b15e6367/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/43bc2c227e4db5b80b5c306e995b037f/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/43bc2c227e4db5b80b5c306e995b037f/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c51e504884e8c881df16e2d902c0ffc4/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c51e504884e8c881df16e2d902c0ffc4/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d56844abb2393d7627cb1720ebf0d936/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/d56844abb2393d7627cb1720ebf0d936/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c34482b113289858b50331484c28e8f5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c34482b113289858b50331484c28e8f5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/cc5f3df7b01196bfe79742abbe929a8d/jetified-MPAndroidChart-v3.1.0/AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/cc5f3df7b01196bfe79742abbe929a8d/jetified-MPAndroidChart-v3.1.0/AndroidManifest.xml:16:5-18:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/cac632bd02759366cabe729a7dcbd0cc/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/cac632bd02759366cabe729a7dcbd0cc/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b23d5909799131d4653e23874ece406f/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b23d5909799131d4653e23874ece406f/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b6f82671cd59dff0689400d175b36c2d/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b6f82671cd59dff0689400d175b36c2d/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b4598a90f18f7d26eaa129d7d20b8a9b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/b4598a90f18f7d26eaa129d7d20b8a9b/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/90b2ae4db3937a86baa7b092cb1569bf/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/90b2ae4db3937a86baa7b092cb1569bf/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a3411fcef564a05e064c7192f738e53d/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/a3411fcef564a05e064c7192f738e53d/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/838c460c812917d24829bd2837d5eec7/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/838c460c812917d24829bd2837d5eec7/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/ba7e01fe29ed093c281ccd263a75323c/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/ba7e01fe29ed093c281ccd263a75323c/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/eccb612ef86e16de9cd7dd75319fab46/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/eccb612ef86e16de9cd7dd75319fab46/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/f251e8928cebe9f8dd33271b0d836fed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/f251e8928cebe9f8dd33271b0d836fed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2eb0b8884315658194848df33d572d2a/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/2eb0b8884315658194848df33d572d2a/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/4ed2f9637c18d5de961d21b58e88ff29/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/4ed2f9637c18d5de961d21b58e88ff29/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/75857a70da88fd56804a4f6fd4205a2a/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/marcos/.gradle/caches/transforms-2/files-2.1/75857a70da88fd56804a4f6fd4205a2a/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c062b430b06178e71d44357e29f3b80f/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/c062b430b06178e71d44357e29f3b80f/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.clans:fab:1.6.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/5880a97c1627b125bbdfcb905d2bebe7/jetified-fab-1.6.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.clans:fab:1.6.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/5880a97c1627b125bbdfcb905d2bebe7/jetified-fab-1.6.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.scottyab:secure-preferences-lib:0.1.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/fd0037662fbfbb1f5e31e277d3ce90b7/jetified-secure-preferences-lib-0.1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.scottyab:secure-preferences-lib:0.1.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/fd0037662fbfbb1f5e31e277d3ce90b7/jetified-secure-preferences-lib-0.1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/870641cf3f31dfc8e13ebc5caa10f09b/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/870641cf3f31dfc8e13ebc5caa10f09b/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.scottyab:aes-crypto:0.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/6b97e4bc6a3468e6be3a49d29a8378ef/jetified-aes-crypto-0.0.4/AndroidManifest.xml:6:5-8:41
+MERGED from [com.scottyab:aes-crypto:0.0.4] /home/marcos/.gradle/caches/transforms-2/files-2.1/6b97e4bc6a3468e6be3a49d29a8378ef/jetified-aes-crypto-0.0.4/AndroidManifest.xml:6:5-8:41
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/marcos/Desktop/original/respiree-app-src-20220427/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from [:react-native-community_netinfo] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [:react-native-background-timer] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-background-timer/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+MERGED from [:react-native-android-location-services-dialog-box] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-android-location-services-dialog-box/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+MERGED from [:react-native-android-location-services-dialog-box] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-android-location-services-dialog-box/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:9:22-78
+uses-feature#android.hardware.bluetooth_le
+ADDED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:react-native-ble-manager] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/react-native-ble-manager/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-53
+queries
+ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:5-22:15
+intent#action:name:android.intent.action.OPEN_DOCUMENT_TREE
+ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:9-21:18
+action#android.intent.action.OPEN_DOCUMENT_TREE
+ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:13-79
+	android:name
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:21-76
+provider#expo.modules.filesystem.FileSystemFileProvider
+ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:25:9-34:20
+	android:grantUriPermissions
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:29:13-47
+	android:authorities
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:27:13-74
+	android:exported
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:28:13-37
+	tools:replace
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:30:13-48
+	android:name
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:26:13-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:31:13-33:70
+	android:resource
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:33:17-67
+	android:name
+		ADDED from [:expo-file-system] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-file-system/android/build/intermediates/library_manifest/release/AndroidManifest.xml:32:17-67
+meta-data#org.unimodules.core.AppLoader#react-native-headless
+ADDED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-14:89
+	android:value
+		ADDED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-86
+	android:name
+		ADDED from [:expo-modules-core] /home/marcos/Desktop/original/respiree-app-src-20220427/node_modules/expo-modules-core/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-79
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-iid:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/dff73f9d41877e6c42eab0e8b843436c/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/e8bbdedfb14da4b97e67d1b71d60fa70/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/marcos/.gradle/caches/transforms-2/files-2.1/207ae3cd89884cbf9f260d98592badc5/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:5-110
+	android:name
+		ADDED from [com.android.installreferrer:installreferrer:1.1.2] /home/marcos/.gradle/caches/transforms-2/files-2.1/3ae49be33a397e268c4f990e7fd3543b/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:22-107

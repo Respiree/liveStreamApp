@@ -21,18 +21,21 @@ import ToggleSwitch from 'toggle-switch-react-native'
 import RNBeep from 'react-native-a-beep';
 import { Thread } from 'react-native-threads';
 import { zScorePeakDetect } from '../respiree-app-src-20220427/pkdetection';
+import RNFetchBlob from 'react-native-fetch-blob';
 /* import zScorePeakDetect from '../respiree-app-src-20220427/pkdetection'; */
 
 
 let sensor1:number[] = [];
 let sensor2:number[] = [];
+let newDataLength = 0;
+let prevDataLength = 0;
 let rawArr:any[]=[];
 let inputData:any[]=[];
 let chartInited = false;
 let mLastUpdateMsec = -1;
 let mStartDate = null;
 let mIsLiveMode = false;
-
+let values = []
 let resultConversion = 0;
 let rr_flag = 0;
 let timer = 2;
@@ -109,8 +112,8 @@ const LiveData: React.FC = observer(({
   //settings
   const [isEnabled, setIsEnabled] = useState(false);
   const [peakDetectionCounter, setPeakDetectionCounter] = useState(0)
-  const [newDataLength, setNewDataLength] = useState(0)
-  const [prevDataLength, setPrevDataLength] = useState(0)
+/*   const [newDataLength, setNewDataLength] = useState(0)
+  const [prevDataLength, setPrevDataLength] = useState(0) */
   //need to have counter, lets say 15 data points
   /* const [RawConvertArr, setRawConvertArr] = useState<any>([])  */
   let thisInterval;
@@ -151,7 +154,8 @@ const LiveData: React.FC = observer(({
           if(result.sensor1 >= MIN_SENSOR_VALUE ) {
               if(sensor1.length > (MAX_RECORDS+patient.liveDataMovingAvg)) sensor1.shift();
               sensor1.push(result.sensor1);
-              setNewDataLength((prev)=>prev+1);
+              newDataLength++;
+             /*  setNewDataLength((prev)=>prev+1); */
           }
 
     
@@ -264,7 +268,7 @@ const LiveData: React.FC = observer(({
     bluetooth.init();
   }, componentId);
 
-useEffect(()=>{
+  useEffect(()=>{
       if(isAddData) {
           if(sensor1.length > 0 && isSensor1On){      
               let sliceLen = sensor1.length > (MAX_RECORDS+patient.liveDataMovingAvg) ? (MAX_RECORDS+patient.liveDataMovingAvg) : sensor1.length;
@@ -275,6 +279,7 @@ useEffect(()=>{
               console.log('slice', sliceLength)
               setSensor1(processedArr);
               //run peak detection algo
+/*               values.push([processedArr.length, processedArr.slice(-sliceLength)]) */
               if(isEnabled && sliceLength && processedArr){
                 processor.updateLagValue( patient.pkLag )
                 processor.updateThresholdValue( patient.pkThreshold )
@@ -284,7 +289,8 @@ useEffect(()=>{
                 if(isPeak)RNBeep.beep();
               }
 
-              setPrevDataLength(newDataLength)
+              prevDataLength = newDataLength
+
 
           } else {
               setSensor1([]);
@@ -443,6 +449,7 @@ workerThread.onmessage = (message) => console.log(message);
         }
 /*         console.log('T' , T);
         console.log('V', V); */
+     
         message = {"read_data": [T,V], "params": params, "sqa_bandpass_rr": sqa_bandpass_rr}
         message = JSON.stringify(message)
         workerThread.postMessage(message)
@@ -594,6 +601,18 @@ workerThread.onmessage = (message) => console.log(message);
                     bluetooth.setMode(0);
                     setLiveModeStart(false);
                     mIsLiveMode = false;
+
+/*                     const headerString = 'newDataLength,newData,fullData\n';
+                    const rowString = values.map(d => `${d[0]},${d[1]},${d[2]}\n`).join('');
+                    const csvString = `${headerString}${rowString}`;             
+                    const pathToWrite = `${RNFetchBlob.fs.dirs.DownloadDir}/data.csv`;     
+                    RNFetchBlob.fs
+                      .writeFile(pathToWrite, csvString, 'utf8')
+                      .then(() => {
+                        console.log(`wrote file ${pathToWrite}`);
+                        // wrote file /storage/emulated/0/Download/data.csv
+                      })
+                      .catch(error => console.error(error));             */        
                 }
             //}
           }}/>              
