@@ -279,7 +279,7 @@ const LiveData: React.FC = observer(({
               console.log('slice', sliceLength)
               setSensor1(processedArr);
               //run peak detection algo
-/*               values.push([processedArr.length, processedArr.slice(-sliceLength)]) */
+               values.push([sliceLength, processedArr.slice(-sliceLength)])
               if(isEnabled && sliceLength && processedArr){
                 processor.updateLagValue( patient.pkLag )
                 processor.updateThresholdValue( patient.pkThreshold )
@@ -602,8 +602,8 @@ workerThread.onmessage = (message) => console.log(message);
                     setLiveModeStart(false);
                     mIsLiveMode = false;
 
-/*                     const headerString = 'newDataLength,newData,fullData\n';
-                    const rowString = values.map(d => `${d[0]},${d[1]},${d[2]}\n`).join('');
+                     const headerString = 'newDataLength,newData,\n';
+                    const rowString = values.map(d => `${d[0]},${d[1]}\n`).join('');
                     const csvString = `${headerString}${rowString}`;             
                     const pathToWrite = `${RNFetchBlob.fs.dirs.DownloadDir}/data.csv`;     
                     RNFetchBlob.fs
@@ -612,7 +612,7 @@ workerThread.onmessage = (message) => console.log(message);
                         console.log(`wrote file ${pathToWrite}`);
                         // wrote file /storage/emulated/0/Download/data.csv
                       })
-                      .catch(error => console.error(error));             */        
+                      .catch(error => console.error(error));               
                 }
             //}
           }}/>              
